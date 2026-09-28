@@ -9,6 +9,7 @@ description = "A data engineering platform for ingesting and analysing TfL trans
 requires-python = ">=3.13"
 dependencies = [
     "requests",
+    "pydantic>=2",
 ]
 
 [project.optional-dependencies]

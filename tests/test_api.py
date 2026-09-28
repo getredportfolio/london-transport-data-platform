@@ -7,7 +7,7 @@ from tfl_pipeline.api import fetch_tube_lines, fetch_tube_status
 
 
 def test_fetch_tube_lines_returns_api_data():
-    fake_data = [{"id": "1", "name": "Central"}, {"id": "2", "name": "Lizzie"}] 
+    fake_data = [{"id": "central", "name": "Central"}, {"id": "elizabeth", "name": "Lizzie"}] 
     with patch("tfl_pipeline.api.requests.get") as mock_get: #mock api call to mock the actual requests
         mock_get.return_value.json.return_value = fake_data #rwhen the fake HTTP response's JSON method is called, return the fake data
         data = fetch_tube_lines()
