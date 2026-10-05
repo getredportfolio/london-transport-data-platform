@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS tube_lines (
+    line_id TEXT PRIMARY KEY,
+    line_name TEXT NOT NULL,
+    ingested_at TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP)
+    ;
