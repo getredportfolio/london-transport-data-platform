@@ -41,3 +41,27 @@ def upsert_tube_lines(lines):
     cursor.close()
     connection.close()
 
+def insert_tube_status_snapshots(snapshots):
+    connection = get_connection()
+    cursor = connection.cursor()
+
+    sql = """
+    INSERT INTO tube_status_snapshots (
+    line_id,
+    status_severity,
+    status_description
+    )
+    VALUES (%s, %s, %s);
+    """
+
+    for snapshot in snapshots:
+        cursor.execute(sql, (
+            snapshot.line_id,
+            snapshot.status_severity,
+            snapshot.status_description
+        ),
+        )
+
+    connection.commit()
+    cursor.close()
+    connection.close()

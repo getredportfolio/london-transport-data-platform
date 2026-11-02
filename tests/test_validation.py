@@ -1,7 +1,12 @@
 import pytest
 from pydantic import ValidationError
 
-from tfl_pipeline.validation import TubeLine, validate_tube_lines
+from tfl_pipeline.validation import (
+    TubeLine,
+    TubeStatusSnapshot,
+    validate_tube_lines,
+    validate_tube_statuses,
+)
 
 
 def test_tube_line_positive_validation():
@@ -38,4 +43,33 @@ def test_validate_tube_line_missing_name():
     with pytest.raises(ValidationError):
         validate_tube_lines(data) #checking whether the missing name triggers a validation error message
 
-    
+def test_validate_tube_statuses():
+    data = [
+        {
+            "id": "central",
+            "lineStatuses": [
+                {
+                    "statusSeverity": 8,
+                    "statusSeverityDescription": "Minor Delays",
+                }
+            ],
+        },
+        {
+            "id": "elizabeth",
+            "lineStatuses": [
+                {
+                    "statusSeverity": 10,
+                    "statusSeverityDescription": "Good Service",
+                }
+            ],
+        },
+    ]
+
+    validated = validate_tube_statuses(data)
+
+    assert len(validated) == 2
+    assert isinstance(validated, list)
+    assert isinstance(validated[0], TubeStatusSnapshot)
+    assert validated[0].line_id == "central"
+    assert validated[0].status_severity == 8
+    assert validated[0].status_description == "Minor Delays"
