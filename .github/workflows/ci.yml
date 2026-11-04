@@ -50,7 +50,7 @@ jobs:
 
       - name: Initialize database schema
         run: |
-          python -c "from pathlib import Path; from tfl_pipeline.database import get_connection; conn = get_connection(); conn.execute(Path('sql/001_create_tube_lines.sql').read_text()); conn.commit(); conn.close()"
+          python -c "from pathlib import Path; from tfl_pipeline.database import get_connection; conn = get_connection(); conn.execute(Path('sql/001_create_tube_lines.sql').read_text()); conn.execute(Path('sql/002_create_tube_status_snapshots.sql').read_text()); conn.commit(); conn.close()"
 
       - name: Run Ruff
         run: ruff check .
