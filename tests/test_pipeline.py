@@ -1,5 +1,7 @@
 from unittest.mock import patch
 
+import pytest
+
 from tfl_pipeline.pipeline import run_ingestion
 
 
@@ -9,13 +11,14 @@ from tfl_pipeline.pipeline import run_ingestion
 @patch("tfl_pipeline.pipeline.upsert_tube_lines")
 @patch("tfl_pipeline.pipeline.validate_tube_lines")
 @patch("tfl_pipeline.pipeline.fetch_tube_lines")
-def test_run_ingestion(mock_fetch_tube_lines,
-                       mock_validate_tube_lines,
-                        mock_upsert_tube_lines,
-                        mock_fetch_tube_status,
-                        mock_validate_tube_statuses,
-                        mock_insert_tube_status_snapshot,
-                        ):
+def test_run_ingestion(
+    mock_fetch_tube_lines,
+    mock_validate_tube_lines,
+    mock_upsert_tube_lines,
+    mock_fetch_tube_status,
+    mock_validate_tube_statuses,
+    mock_insert_tube_status_snapshot,
+):
     raw_lines = ["raw-line-data"]
     validated_lines = ["validated-line-data"]
 
@@ -30,15 +33,45 @@ def test_run_ingestion(mock_fetch_tube_lines,
 
     run_ingestion()
 
-    #checking whether both the fetches worked
+    # checking whether both the fetches worked
     mock_fetch_tube_status.assert_called_once_with()
     mock_fetch_tube_lines.assert_called_once_with()
 
-    #checking whether both the validations worked
+    # checking whether both the validations worked
     mock_validate_tube_statuses.assert_called_once_with(raw_status)
     mock_validate_tube_lines.assert_called_once_with(raw_lines)
 
-    #checking whether both the inserts worked
+    # checking whether both the inserts worked
     mock_insert_tube_status_snapshot.assert_called_once_with(validated_status)
     mock_upsert_tube_lines.assert_called_once_with(validated_lines)
-    
+
+
+@patch("tfl_pipeline.pipeline.insert_tube_status_snapshots")
+@patch("tfl_pipeline.pipeline.validate_tube_statuses")
+@patch("tfl_pipeline.pipeline.fetch_tube_status")
+@patch("tfl_pipeline.pipeline.upsert_tube_lines")
+@patch("tfl_pipeline.pipeline.validate_tube_lines")
+@patch("tfl_pipeline.pipeline.fetch_tube_lines")
+def test_run_ingestion_stops_when_line_validation_fails(
+    mock_fetch_tube_lines,
+    mock_validate_tube_lines,
+    mock_upsert_tube_lines,
+    mock_fetch_tube_status,
+    mock_validate_tube_statuses,
+    mock_insert_tube_status_snapshots,
+):
+    raw_tube_line = ["raw_incorrect_fake_data"]
+
+    mock_fetch_tube_lines.return_value = raw_tube_line
+    mock_validate_tube_lines.side_effect = ValueError("Validation Error")
+
+    with pytest.raises(ValueError):
+        run_ingestion()
+
+    mock_fetch_tube_lines.assert_called_once_with()
+    mock_validate_tube_lines.assert_called_once_with(raw_tube_line)
+
+    mock_upsert_tube_lines.assert_not_called()
+    mock_fetch_tube_status.assert_not_called()
+    mock_validate_tube_statuses.assert_not_called()
+    mock_insert_tube_status_snapshots.assert_not_called()
