@@ -73,3 +73,18 @@ def test_validate_tube_statuses():
     assert validated[0].line_id == "central"
     assert validated[0].status_severity == 8
     assert validated[0].status_description == "Minor Delays"
+
+def test_validate_tube_status_missing_description():
+    data = [
+        {
+            "id": "central",
+            "lineStatuses": [
+                {
+                    "statusSeverity": 8,
+                }
+            ],
+        }
+    ]
+
+    with pytest.raises(ValidationError):
+        validate_tube_statuses(data)

@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: stg_tube_lines
+    columns:
+      - name: line_id
+        data_tests:
+          - unique
+          - not_null
+
+  - name: stg_tube_status_snapshots
+    columns:
+      - name: snapshot_id
+        data_tests:
+          - unique
+          - not_null
+
+      - name: line_id
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_tube_lines')
+                field: line_id

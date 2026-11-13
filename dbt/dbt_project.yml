@@ -1,0 +1,14 @@
+name: "tfl_analytics"
+version: "1.0.0"
+config-version: 2
+
+profile: "tfl_analytics"
+
+model-paths: ["models"]
+
+flags:
+  manage_state: false
+
+models:
+  tfl_analytics:
+    +materialized: view

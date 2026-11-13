@@ -1,0 +1,2269 @@
+[0m15:57:09.748463 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002490822E3C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002490A844190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002490A8447D0>]}
+
+
+============================== 15:57:09.763529 | 65f752c4-223b-4697-8e21-5c59a502ee3c ==============================
+[0m15:57:09.763529 [info ] [MainThread]: Running with dbt=1.12.7
+[0m15:57:09.764700 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt debug --project-dir dbt --profiles-dir dbt', 'log_path': 'dbt\\logs'}
+[0m15:57:09.830106 [info ] [MainThread]: dbt version: 1.12.7
+[0m15:57:09.830696 [info ] [MainThread]: python version: 3.13.15
+[0m15:57:09.831555 [info ] [MainThread]: python path: C:\Users\redav\london-transport-data-platform\.venv\Scripts\python.exe
+[0m15:57:09.832502 [info ] [MainThread]: os info: Windows-11-10.0.26300-SP0
+[0m15:57:09.837949 [info ] [MainThread]: Using profiles dir at dbt
+[0m15:57:09.838776 [info ] [MainThread]: Using profiles.yml file at dbt\profiles.yml
+[0m15:57:09.839335 [info ] [MainThread]: Using dbt_project.yml file at dbt\dbt_project.yml
+[0m15:57:10.065224 [info ] [MainThread]: Configuration:
+[0m15:57:10.066329 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m15:57:10.067722 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m15:57:10.068878 [info ] [MainThread]: Required dependencies:
+[0m15:57:10.069985 [debug] [MainThread]: Executing "git --help"
+[0m15:57:10.137406 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:57:10.137908 [debug] [MainThread]: STDERR: "b''"
+[0m15:57:10.138254 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:57:10.138761 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m15:57:10.139219 [info ] [MainThread]: [31m1 check failed:[0m
+[0m15:57:10.139578 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  
+  dbt encountered an error while trying to read your profiles.yml file.
+  
+  The profiles.yml file at dbt\profiles.yml is empty
+  
+
+
+[0m15:57:10.140517 [debug] [MainThread]: Command `dbt debug` failed at 15:57:10.140411 after 0.57 seconds
+[0m15:57:10.140827 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002490871F5C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002490A9B3650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002490A9CDE10>]}
+[0m15:57:10.141153 [debug] [MainThread]: Flushing usage events
+[0m15:57:10.867896 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:58:16.862276 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B07AC5E3C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B077AFD810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B07D293C50>]}
+
+
+============================== 15:58:16.868624 | 5f292298-0322-40b7-958a-30e25936b091 ==============================
+[0m15:58:16.868624 [info ] [MainThread]: Running with dbt=1.12.7
+[0m15:58:16.869458 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'dbt', 'invocation_command': 'dbt debug --project-dir dbt --profiles-dir dbt', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'dbt\\logs'}
+[0m15:58:16.900143 [info ] [MainThread]: dbt version: 1.12.7
+[0m15:58:16.900706 [info ] [MainThread]: python version: 3.13.15
+[0m15:58:16.901146 [info ] [MainThread]: python path: C:\Users\redav\london-transport-data-platform\.venv\Scripts\python.exe
+[0m15:58:16.901541 [info ] [MainThread]: os info: Windows-11-10.0.26300-SP0
+[0m15:58:17.067085 [info ] [MainThread]: Using profiles dir at dbt
+[0m15:58:17.067662 [info ] [MainThread]: Using profiles.yml file at dbt\profiles.yml
+[0m15:58:17.068235 [info ] [MainThread]: Using dbt_project.yml file at dbt\dbt_project.yml
+[0m15:58:17.070395 [info ] [MainThread]: adapter type: postgres
+[0m15:58:17.070994 [info ] [MainThread]: adapter version: 1.11.0
+[0m15:58:17.217798 [info ] [MainThread]: Configuration:
+[0m15:58:17.218438 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m15:58:17.219096 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m15:58:17.219644 [info ] [MainThread]: Required dependencies:
+[0m15:58:17.220125 [debug] [MainThread]: Executing "git --help"
+[0m15:58:17.281718 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:58:17.282196 [debug] [MainThread]: STDERR: "b''"
+[0m15:58:17.282590 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:58:17.283274 [info ] [MainThread]: Connection:
+[0m15:58:17.283764 [info ] [MainThread]:   host: 127.0.0.1
+[0m15:58:17.284295 [info ] [MainThread]:   port: 5433
+[0m15:58:17.284699 [info ] [MainThread]:   user: tfl_user
+[0m15:58:17.285089 [info ] [MainThread]:   database: tfl
+[0m15:58:17.285480 [info ] [MainThread]:   schema: analytics
+[0m15:58:17.285855 [info ] [MainThread]:   connect_timeout: 10
+[0m15:58:17.286242 [info ] [MainThread]:   role: None
+[0m15:58:17.286599 [info ] [MainThread]:   search_path: None
+[0m15:58:17.286941 [info ] [MainThread]:   keepalives_idle: 0
+[0m15:58:17.287270 [info ] [MainThread]:   sslmode: None
+[0m15:58:17.287597 [info ] [MainThread]:   sslcert: None
+[0m15:58:17.287943 [info ] [MainThread]:   sslkey: None
+[0m15:58:17.288435 [info ] [MainThread]:   sslrootcert: None
+[0m15:58:17.289303 [info ] [MainThread]:   application_name: dbt
+[0m15:58:17.290000 [info ] [MainThread]:   autocommit: False
+[0m15:58:17.290748 [info ] [MainThread]:   retries: 1
+[0m15:58:17.292280 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m15:58:17.596393 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m15:58:17.762424 [debug] [MainThread]: Using postgres connection "debug"
+[0m15:58:17.762795 [debug] [MainThread]: On debug: select 1 as id
+[0m15:58:17.763189 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:58:19.804930 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+connection to server at "127.0.0.1", port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+[0m15:58:21.834292 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m15:58:21.834827 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m15:58:21.835418 [debug] [MainThread]: On debug: No close available on handle
+[0m15:58:21.835891 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m15:58:21.836412 [info ] [MainThread]: [31m1 check failed:[0m
+[0m15:58:21.836839 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  connection to server at "127.0.0.1", port 5433 failed: Connection refused (0x0000274D/10061)
+  	Is the server running on that host and accepting TCP/IP connections?
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m15:58:21.837891 [debug] [MainThread]: Command `dbt debug` failed at 15:58:21.837788 after 5.28 seconds
+[0m15:58:21.838203 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m15:58:21.839130 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B07D337490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B07D970170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B07D4CB9B0>]}
+[0m15:58:21.839646 [debug] [MainThread]: Flushing usage events
+[0m15:58:22.543534 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:01:20.393274 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015AFD34E3C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015AFA23D810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015AFF97FC50>]}
+
+
+============================== 16:01:20.403024 | 0363462b-a50d-474f-8f04-55dd4ccbbe02 ==============================
+[0m16:01:20.403024 [info ] [MainThread]: Running with dbt=1.12.7
+[0m16:01:20.404108 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt debug --project-dir dbt --profiles-dir dbt', 'log_path': 'dbt\\logs'}
+[0m16:01:20.447403 [info ] [MainThread]: dbt version: 1.12.7
+[0m16:01:20.447977 [info ] [MainThread]: python version: 3.13.15
+[0m16:01:20.448433 [info ] [MainThread]: python path: C:\Users\redav\london-transport-data-platform\.venv\Scripts\python.exe
+[0m16:01:20.449226 [info ] [MainThread]: os info: Windows-11-10.0.26300-SP0
+[0m16:01:20.543459 [info ] [MainThread]: Using profiles dir at dbt
+[0m16:01:20.544017 [info ] [MainThread]: Using profiles.yml file at dbt\profiles.yml
+[0m16:01:20.544410 [info ] [MainThread]: Using dbt_project.yml file at dbt\dbt_project.yml
+[0m16:01:20.545584 [info ] [MainThread]: adapter type: postgres
+[0m16:01:20.545949 [info ] [MainThread]: adapter version: 1.11.0
+[0m16:01:20.676141 [info ] [MainThread]: Configuration:
+[0m16:01:20.676706 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:01:20.677125 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m16:01:20.677540 [info ] [MainThread]: Required dependencies:
+[0m16:01:20.677964 [debug] [MainThread]: Executing "git --help"
+[0m16:01:20.750834 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:01:20.751258 [debug] [MainThread]: STDERR: "b''"
+[0m16:01:20.751605 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:01:20.752086 [info ] [MainThread]: Connection:
+[0m16:01:20.752566 [info ] [MainThread]:   host: 127.0.0.1
+[0m16:01:20.752967 [info ] [MainThread]:   port: 5433
+[0m16:01:20.753346 [info ] [MainThread]:   user: tfl_user
+[0m16:01:20.753704 [info ] [MainThread]:   database: tfl
+[0m16:01:20.754094 [info ] [MainThread]:   schema: analytics
+[0m16:01:20.754444 [info ] [MainThread]:   connect_timeout: 10
+[0m16:01:20.754783 [info ] [MainThread]:   role: None
+[0m16:01:20.755274 [info ] [MainThread]:   search_path: None
+[0m16:01:20.755618 [info ] [MainThread]:   keepalives_idle: 0
+[0m16:01:20.755959 [info ] [MainThread]:   sslmode: None
+[0m16:01:20.756286 [info ] [MainThread]:   sslcert: None
+[0m16:01:20.756624 [info ] [MainThread]:   sslkey: None
+[0m16:01:20.756960 [info ] [MainThread]:   sslrootcert: None
+[0m16:01:20.757351 [info ] [MainThread]:   application_name: dbt
+[0m16:01:20.757775 [info ] [MainThread]:   autocommit: False
+[0m16:01:20.758536 [info ] [MainThread]:   retries: 1
+[0m16:01:20.760184 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m16:01:21.016588 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m16:01:21.154246 [debug] [MainThread]: Using postgres connection "debug"
+[0m16:01:21.154596 [debug] [MainThread]: On debug: select 1 as id
+[0m16:01:21.154821 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:01:21.203108 [debug] [MainThread]: SQL status: SELECT 1 in 0.048 seconds
+[0m16:01:21.204039 [debug] [MainThread]: On debug: Close
+[0m16:01:21.204459 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m16:01:21.205277 [info ] [MainThread]: [32mAll checks passed![0m
+[0m16:01:21.206759 [debug] [MainThread]: Command `dbt debug` succeeded at 16:01:21.206580 after 1.08 seconds
+[0m16:01:21.207134 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m16:01:21.207469 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015AFFA1F490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015A804E0950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015A8007BDF0>]}
+[0m16:01:21.207808 [debug] [MainThread]: Flushing usage events
+[0m16:01:21.946294 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:05:11.703734 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E8B72A23C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E8B415D810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E8B98F3C50>]}
+
+
+============================== 16:05:11.713638 | e716161d-5ef9-496e-9be2-814965f03240 ==============================
+[0m16:05:11.713638 [info ] [MainThread]: Running with dbt=1.12.7
+[0m16:05:11.714768 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'dbt', 'invocation_command': 'dbt debug --project-dir dbt --profiles-dir dbt', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'dbt\\logs'}
+[0m16:05:11.803736 [info ] [MainThread]: dbt version: 1.12.7
+[0m16:05:11.805234 [info ] [MainThread]: python version: 3.13.15
+[0m16:05:11.806042 [info ] [MainThread]: python path: C:\Users\redav\london-transport-data-platform\.venv\Scripts\python.exe
+[0m16:05:11.806566 [info ] [MainThread]: os info: Windows-11-10.0.26300-SP0
+[0m16:05:11.932938 [info ] [MainThread]: Using profiles dir at dbt
+[0m16:05:11.933955 [info ] [MainThread]: Using profiles.yml file at dbt\profiles.yml
+[0m16:05:11.934723 [info ] [MainThread]: Using dbt_project.yml file at dbt\dbt_project.yml
+[0m16:05:11.936446 [info ] [MainThread]: adapter type: postgres
+[0m16:05:11.937364 [info ] [MainThread]: adapter version: 1.11.0
+[0m16:05:12.140002 [info ] [MainThread]: Configuration:
+[0m16:05:12.141029 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:05:12.141597 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m16:05:12.142345 [info ] [MainThread]: Required dependencies:
+[0m16:05:12.142894 [debug] [MainThread]: Executing "git --help"
+[0m16:05:12.232949 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:05:12.233919 [debug] [MainThread]: STDERR: "b''"
+[0m16:05:12.234685 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:05:12.235507 [info ] [MainThread]: Connection:
+[0m16:05:12.236642 [info ] [MainThread]:   host: 127.0.0.1
+[0m16:05:12.237615 [info ] [MainThread]:   port: 5433
+[0m16:05:12.238484 [info ] [MainThread]:   user: tfl_user
+[0m16:05:12.239244 [info ] [MainThread]:   database: tfl
+[0m16:05:12.240029 [info ] [MainThread]:   schema: analytics
+[0m16:05:12.240854 [info ] [MainThread]:   connect_timeout: 10
+[0m16:05:12.241573 [info ] [MainThread]:   role: None
+[0m16:05:12.242337 [info ] [MainThread]:   search_path: None
+[0m16:05:12.243339 [info ] [MainThread]:   keepalives_idle: 0
+[0m16:05:12.244169 [info ] [MainThread]:   sslmode: None
+[0m16:05:12.245454 [info ] [MainThread]:   sslcert: None
+[0m16:05:12.246604 [info ] [MainThread]:   sslkey: None
+[0m16:05:12.247680 [info ] [MainThread]:   sslrootcert: None
+[0m16:05:12.248827 [info ] [MainThread]:   application_name: dbt
+[0m16:05:12.249892 [info ] [MainThread]:   autocommit: False
+[0m16:05:12.250802 [info ] [MainThread]:   retries: 1
+[0m16:05:12.252575 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m16:05:13.105368 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m16:05:13.259778 [debug] [MainThread]: Using postgres connection "debug"
+[0m16:05:13.260290 [debug] [MainThread]: On debug: select 1 as id
+[0m16:05:13.260688 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:05:13.348159 [debug] [MainThread]: SQL status: SELECT 1 in 0.087 seconds
+[0m16:05:13.349461 [debug] [MainThread]: On debug: Close
+[0m16:05:13.349922 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m16:05:13.350765 [info ] [MainThread]: [32mAll checks passed![0m
+[0m16:05:13.352815 [debug] [MainThread]: Command `dbt debug` succeeded at 16:05:13.352508 after 2.03 seconds
+[0m16:05:13.353558 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m16:05:13.353830 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E8B998F490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E8B9FA0950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E8B9B3BDF0>]}
+[0m16:05:13.354124 [debug] [MainThread]: Flushing usage events
+[0m16:05:14.268866 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:11:02.404145 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B3382023C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B3350CD810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B33A8A3B10>]}
+
+
+============================== 16:11:02.410592 | 54001275-995a-4206-a647-97ad9dcd0a5a ==============================
+[0m16:11:02.410592 [info ] [MainThread]: Running with dbt=1.12.7
+[0m16:11:02.411400 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt run --project-dir dbt --profiles-dir dbt', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'dbt\\logs'}
+[0m16:11:04.097666 [info ] [MainThread]: State adapter: dbt-state v2.64.0 is enabled
+[0m16:11:04.459542 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '54001275-995a-4206-a647-97ad9dcd0a5a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B3380028B0>]}
+[0m16:11:04.558951 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '54001275-995a-4206-a647-97ad9dcd0a5a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B33A902690>]}
+[0m16:11:04.561011 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m16:11:04.992069 [debug] [MainThread]: checksum: 3231035334bfc49aa985ad8056e9ca553f6df8558700f2e162d2889609c5a75a, vars: {}, profile: tfl_analytics, target: dev, version: 1.12.7
+[0m16:11:04.993598 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m16:11:04.994186 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '54001275-995a-4206-a647-97ad9dcd0a5a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B33BCF5C50>]}
+[0m16:11:06.292783 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '54001275-995a-4206-a647-97ad9dcd0a5a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B337FC94F0>]}
+[0m16:11:06.413019 [debug] [MainThread]: Wrote artifact WritableManifest to dbt\target\manifest.json
+[0m16:11:06.416462 [debug] [MainThread]: Wrote artifact SemanticManifest to dbt\target\semantic_manifest.json
+[0m16:11:06.502681 [debug] [MainThread]: Wrote artifact OsiDocument to dbt\target\osi_document.json
+[0m16:11:06.506453 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '54001275-995a-4206-a647-97ad9dcd0a5a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B33D3BF770>]}
+[0m16:11:06.507349 [info ] [MainThread]: Found 2 models, 2 sources, 477 macros
+[0m16:11:06.508067 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '54001275-995a-4206-a647-97ad9dcd0a5a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B33BF7ED00>]}
+[0m16:11:06.510924 [info ] [MainThread]: 
+[0m16:11:06.511524 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m16:11:06.512066 [info ] [MainThread]: 
+[0m16:11:06.512722 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m16:16:07.731688 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:16:07.762674 [info ] [MainThread]: 
+[0m16:16:07.768566 [info ] [MainThread]: Finished running  in 0 hours 5 minutes and 1.24 seconds (301.24s).
+[0m16:16:07.803964 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  Authentication timed out after 300 seconds. Please try again and complete the login in your browser.
+[0m16:16:07.858439 [debug] [MainThread]: Command `dbt run` failed at 16:16:07.857666 after 305.74 seconds
+[0m16:16:07.875095 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B33A652510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B33D483280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B33D483CD0>]}
+[0m16:16:07.880841 [debug] [MainThread]: Flushing usage events
+[0m16:16:09.168784 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:28:29.509597 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FCFDC523C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FCFAAFD810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FC802F3B10>]}
+
+
+============================== 16:28:29.522674 | d5a67ce7-8182-40eb-9b4e-85da784a9908 ==============================
+[0m16:28:29.522674 [info ] [MainThread]: Running with dbt=1.12.7
+[0m16:28:29.523903 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt run --project-dir dbt --profiles-dir dbt', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'dbt\\logs'}
+[0m16:28:30.950607 [info ] [MainThread]: State adapter: dbt-state v2.64.0 is enabled
+[0m16:28:31.184242 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd5a67ce7-8182-40eb-9b4e-85da784a9908', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FC81669E00>]}
+[0m16:28:31.258411 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd5a67ce7-8182-40eb-9b4e-85da784a9908', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FC80356690>]}
+[0m16:28:31.259729 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m16:28:31.554448 [debug] [MainThread]: checksum: 3231035334bfc49aa985ad8056e9ca553f6df8558700f2e162d2889609c5a75a, vars: {}, profile: tfl_analytics, target: dev, version: 1.12.7
+[0m16:28:31.672868 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m16:28:31.673408 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'd5a67ce7-8182-40eb-9b4e-85da784a9908', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FC81C34F50>]}
+[0m16:28:32.975799 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd5a67ce7-8182-40eb-9b4e-85da784a9908', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FC817A3110>]}
+[0m16:28:33.071979 [debug] [MainThread]: Wrote artifact WritableManifest to dbt\target\manifest.json
+[0m16:28:33.077458 [debug] [MainThread]: Wrote artifact SemanticManifest to dbt\target\semantic_manifest.json
+[0m16:28:33.140316 [debug] [MainThread]: Wrote artifact OsiDocument to dbt\target\osi_document.json
+[0m16:28:33.143428 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd5a67ce7-8182-40eb-9b4e-85da784a9908', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FC81AAA190>]}
+[0m16:28:33.143867 [info ] [MainThread]: Found 2 models, 2 sources, 477 macros
+[0m16:28:33.144364 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd5a67ce7-8182-40eb-9b4e-85da784a9908', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FC81CA1160>]}
+[0m16:28:33.146341 [info ] [MainThread]: 
+[0m16:28:33.146772 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m16:28:33.147337 [info ] [MainThread]: 
+[0m16:28:33.147925 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m16:33:33.282684 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:33:33.294686 [info ] [MainThread]: 
+[0m16:33:33.298444 [info ] [MainThread]: Finished running  in 0 hours 5 minutes and 0.14 seconds (300.14s).
+[0m16:33:33.312658 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+
+[0m16:33:33.404652 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\redav\london-transport-data-platform\.venv\Lib\site-packages\dbt\cli\requires.py", line 198, in wrapper
+    result, success = func(*args, **kwargs)
+                      ~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\redav\london-transport-data-platform\.venv\Lib\site-packages\dbt\cli\requires.py", line 144, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\redav\london-transport-data-platform\.venv\Lib\site-packages\dbt\cli\requires.py", line 295, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\redav\london-transport-data-platform\.venv\Lib\site-packages\dbt\cli\requires.py", line 340, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\redav\london-transport-data-platform\.venv\Lib\site-packages\dbt\cli\requires.py", line 387, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\redav\london-transport-data-platform\.venv\Lib\site-packages\dbt\cli\requires.py", line 404, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\redav\london-transport-data-platform\.venv\Lib\site-packages\dbt\cli\main.py", line 609, in run
+    results = task.run()
+  File "C:\Users\redav\london-transport-data-platform\.venv\Lib\site-packages\dbt\task\runnable.py", line 775, in run
+    result = self.execute_with_hooks(selected_uids)
+  File "C:\Users\redav\london-transport-data-platform\.venv\Lib\site-packages\dbt\task\runnable.py", line 701, in execute_with_hooks
+    before_run_status = self.before_run(adapter, selected_uids)
+  File "C:\Users\redav\london-transport-data-platform\.venv\Lib\site-packages\dbt\task\run.py", line 1310, in before_run
+    self.defer_to_manifest()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\redav\london-transport-data-platform\.venv\Lib\site-packages\dbt_state\plugin.py", line 155, in defer_to_manifest_override
+    runner_override.defer_to_manifest_override(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\redav\london-transport-data-platform\.venv\Lib\site-packages\dbt_state\runner.py", line 279, in defer_to_manifest_override
+    run_cache = self._run_cache_get_or_create(task.config, adapter, manifest)
+  File "C:\Users\redav\london-transport-data-platform\.venv\Lib\site-packages\dbt_state\runner.py", line 700, in _run_cache_get_or_create
+    client = self._get_or_create_client(run_cache_config)
+  File "C:\Users\redav\london-transport-data-platform\.venv\Lib\site-packages\dbt_state\runner.py", line 630, in _get_or_create_client
+    self._query_cache_client = QueryCacheGrpcClient.create(
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        run_cache_config=run_cache_config,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        cloud_run_id=get_cloud_run_id(),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\redav\london-transport-data-platform\.venv\Lib\site-packages\dbt_state\grpc\client.py", line 185, in create
+    org_id = sso.org_id(login=True)
+  File "C:\Users\redav\london-transport-data-platform\.venv\Lib\site-packages\dbt_state\auth\sso.py", line 238, in org_id
+    self._get_or_refresh_token_info(login)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\redav\london-transport-data-platform\.venv\Lib\site-packages\dbt_state\auth\sso.py", line 339, in _get_or_refresh_token_info
+    return self._login()
+           ~~~~~~~~~~~^^
+  File "C:\Users\redav\london-transport-data-platform\.venv\Lib\site-packages\dbt_state\auth\sso.py", line 376, in _login
+    thread.join(timeout=server.timeout)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\redav\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 1095, in join
+    self._handle.join(timeout)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\redav\london-transport-data-platform\.venv\Lib\site-packages\dbt_state\plugin.py", line 243, in on_user_cancel
+    original_handler(signum, frame)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+[0m16:33:33.427154 [debug] [MainThread]: Command `dbt run` failed at 16:33:33.426321 after 304.17 seconds
+[0m16:33:33.433416 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FC800A2510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FC82F415A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FC82F42990>]}
+[0m16:33:33.436889 [debug] [MainThread]: Flushing usage events
+[0m16:33:35.238415 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:46:08.950009 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D43ADF23C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D437CBD810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D43D493B10>]}
+
+
+============================== 16:46:08.960002 | c1ad047c-598c-40f6-ae6e-c7ea80ffa253 ==============================
+[0m16:46:08.960002 [info ] [MainThread]: Running with dbt=1.12.7
+[0m16:46:08.960866 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run --project-dir dbt --profiles-dir dbt', 'log_path': 'dbt\\logs'}
+[0m16:46:08.961336 [warn ] [MainThread]: [[33mWARNING[0m][EnvironmentVariableNamespaceDeprecation]: Deprecated
+functionality
+Found custom environment variable `DBT_ENGINE_MANAGE_STATE` in the environment.
+The prefix `DBT_ENGINE` is reserved for dbt engine environment variables. Custom
+environment variables with the prefix `DBT_ENGINE` may cause collisions and
+runtime errors.
+[0m16:46:08.961988 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'c1ad047c-598c-40f6-ae6e-c7ea80ffa253', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D43D483A80>]}
+[0m16:46:09.362224 [info ] [MainThread]: State adapter: dbt-state v2.64.0 is disabled
+[0m16:46:09.385926 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c1ad047c-598c-40f6-ae6e-c7ea80ffa253', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D43A7A4490>]}
+[0m16:46:09.486578 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c1ad047c-598c-40f6-ae6e-c7ea80ffa253', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D43D2EBE50>]}
+[0m16:46:09.488420 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m16:46:09.934856 [debug] [MainThread]: checksum: 3231035334bfc49aa985ad8056e9ca553f6df8558700f2e162d2889609c5a75a, vars: {}, profile: tfl_analytics, target: dev, version: 1.12.7
+[0m16:46:10.503992 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:46:10.505059 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m16:46:10.506041 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:46:10.531569 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c1ad047c-598c-40f6-ae6e-c7ea80ffa253', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D43D71F5C0>]}
+[0m16:46:10.764248 [debug] [MainThread]: Wrote artifact WritableManifest to dbt\target\manifest.json
+[0m16:46:10.768178 [debug] [MainThread]: Wrote artifact SemanticManifest to dbt\target\semantic_manifest.json
+[0m16:46:10.850790 [debug] [MainThread]: Wrote artifact OsiDocument to dbt\target\osi_document.json
+[0m16:46:10.881095 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c1ad047c-598c-40f6-ae6e-c7ea80ffa253', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D43DCEC590>]}
+[0m16:46:10.881974 [info ] [MainThread]: Found 2 models, 2 sources, 477 macros
+[0m16:46:10.882620 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c1ad047c-598c-40f6-ae6e-c7ea80ffa253', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D43DCAD090>]}
+[0m16:46:10.885424 [info ] [MainThread]: 
+[0m16:46:10.886453 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m16:46:10.887922 [info ] [MainThread]: 
+[0m16:46:10.889581 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m16:46:10.891983 [debug] [ThreadPool]: Acquiring new postgres connection 'list_tfl'
+[0m16:46:11.476179 [debug] [ThreadPool]: Using postgres connection "list_tfl"
+[0m16:46:11.476592 [debug] [ThreadPool]: On list_tfl: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "connection_name": "list_tfl"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m16:46:11.476872 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:46:11.732450 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.255 seconds
+[0m16:46:11.734145 [debug] [ThreadPool]: On list_tfl: Close
+[0m16:46:11.735908 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_tfl, now create_tfl_analytics)
+[0m16:46:11.737536 [debug] [ThreadPool]: Creating schema "database: "tfl"
+schema: "analytics"
+"
+[0m16:46:11.745311 [debug] [ThreadPool]: Using postgres connection "create_tfl_analytics"
+[0m16:46:11.745766 [debug] [ThreadPool]: On create_tfl_analytics: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "connection_name": "create_tfl_analytics"} */
+create schema if not exists "analytics"
+[0m16:46:11.746145 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:46:11.796978 [debug] [ThreadPool]: SQL status: CREATE SCHEMA in 0.051 seconds
+[0m16:46:11.797973 [debug] [ThreadPool]: On create_tfl_analytics: COMMIT
+[0m16:46:11.798365 [debug] [ThreadPool]: Using postgres connection "create_tfl_analytics"
+[0m16:46:11.798663 [debug] [ThreadPool]: On create_tfl_analytics: COMMIT
+[0m16:46:11.805573 [debug] [ThreadPool]: SQL status: COMMIT in 0.007 seconds
+[0m16:46:11.806443 [debug] [ThreadPool]: On create_tfl_analytics: Close
+[0m16:46:11.818660 [debug] [ThreadPool]: Acquiring new postgres connection 'list_tfl_analytics'
+[0m16:46:11.827301 [debug] [ThreadPool]: Using postgres connection "list_tfl_analytics"
+[0m16:46:11.827813 [debug] [ThreadPool]: On list_tfl_analytics: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "connection_name": "list_tfl_analytics"} */
+select
+      'tfl' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'analytics'
+    union all
+    select
+      'tfl' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'analytics'
+    union all
+    select
+      'tfl' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'analytics'
+    union all
+    select distinct
+     'tfl' as database,
+     proname as name,
+     ns.nspname as schema,
+     'function' as type
+    from pg_proc
+     join pg_namespace as ns on pronamespace = ns.oid
+    where ns.nspname ilike 'analytics'
+  
+[0m16:46:11.828179 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:46:11.909848 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.082 seconds
+[0m16:46:11.911368 [debug] [ThreadPool]: On list_tfl_analytics: ROLLBACK
+[0m16:46:11.912907 [debug] [ThreadPool]: On list_tfl_analytics: Close
+[0m16:46:11.918556 [debug] [MainThread]: Using postgres connection "master"
+[0m16:46:11.919150 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m16:46:11.919581 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:46:11.975586 [debug] [MainThread]: SQL status: SELECT 0 in 0.056 seconds
+[0m16:46:11.977851 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c1ad047c-598c-40f6-ae6e-c7ea80ffa253', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D43DCD5910>]}
+[0m16:46:11.978477 [debug] [MainThread]: On master: ROLLBACK
+[0m16:46:11.980891 [debug] [MainThread]: On master: COMMIT
+[0m16:46:11.981421 [debug] [MainThread]: Using postgres connection "master"
+[0m16:46:11.981859 [debug] [MainThread]: On master: COMMIT
+[0m16:46:11.984776 [debug] [MainThread]: SQL status: COMMIT in 0.002 seconds
+[0m16:46:11.985280 [debug] [MainThread]: On master: Close
+[0m16:46:12.061808 [debug] [Thread-1 (]: Began running node model.tfl_analytics.stg_tube_lines
+[0m16:46:12.062620 [info ] [Thread-1 (]: 1 of 1 START sql view model analytics.stg_tube_lines ........................... [RUN]
+[0m16:46:12.063725 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.tfl_analytics.stg_tube_lines'
+[0m16:46:12.064102 [debug] [Thread-1 (]: Began compiling node model.tfl_analytics.stg_tube_lines
+[0m16:46:12.077758 [debug] [Thread-1 (]: Writing injected SQL for node "model.tfl_analytics.stg_tube_lines"
+[0m16:46:12.080060 [debug] [Thread-1 (]: Began executing node model.tfl_analytics.stg_tube_lines
+[0m16:46:12.154183 [debug] [Thread-1 (]: Writing runtime sql for node "model.tfl_analytics.stg_tube_lines"
+[0m16:46:12.160790 [debug] [Thread-1 (]: Using postgres connection "model.tfl_analytics.stg_tube_lines"
+[0m16:46:12.161792 [debug] [Thread-1 (]: On model.tfl_analytics.stg_tube_lines: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "node_id": "model.tfl_analytics.stg_tube_lines"} */
+
+  create view "tfl"."analytics"."stg_tube_lines__dbt_tmp"
+    
+    
+  as (
+    select line_id, line_name, ingested_at from "tfl"."public"."tube_lines"
+  );
+[0m16:46:12.162472 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m16:46:12.305665 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.143 seconds
+[0m16:46:12.317245 [debug] [Thread-1 (]: Using postgres connection "model.tfl_analytics.stg_tube_lines"
+[0m16:46:12.318204 [debug] [Thread-1 (]: On model.tfl_analytics.stg_tube_lines: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "node_id": "model.tfl_analytics.stg_tube_lines"} */
+alter table "tfl"."analytics"."stg_tube_lines__dbt_tmp" rename to "stg_tube_lines"
+[0m16:46:12.331640 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.012 seconds
+[0m16:46:12.365570 [debug] [Thread-1 (]: On model.tfl_analytics.stg_tube_lines: COMMIT
+[0m16:46:12.366569 [debug] [Thread-1 (]: Using postgres connection "model.tfl_analytics.stg_tube_lines"
+[0m16:46:12.367486 [debug] [Thread-1 (]: On model.tfl_analytics.stg_tube_lines: COMMIT
+[0m16:46:12.419406 [debug] [Thread-1 (]: SQL status: COMMIT in 0.051 seconds
+[0m16:46:12.429481 [debug] [Thread-1 (]: Applying DROP to: "tfl"."analytics"."stg_tube_lines__dbt_backup"
+[0m16:46:12.434994 [debug] [Thread-1 (]: Using postgres connection "model.tfl_analytics.stg_tube_lines"
+[0m16:46:12.435596 [debug] [Thread-1 (]: On model.tfl_analytics.stg_tube_lines: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "node_id": "model.tfl_analytics.stg_tube_lines"} */
+drop view if exists "tfl"."analytics"."stg_tube_lines__dbt_backup" cascade
+[0m16:46:12.441866 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.006 seconds
+[0m16:46:12.448275 [debug] [Thread-1 (]: On model.tfl_analytics.stg_tube_lines: Close
+[0m16:46:12.456150 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c1ad047c-598c-40f6-ae6e-c7ea80ffa253', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D43E06C260>]}
+[0m16:46:12.457382 [info ] [Thread-1 (]: 1 of 1 OK created sql view model analytics.stg_tube_lines ...................... [[32mCREATE VIEW[0m in 0.39s]
+[0m16:46:12.458985 [debug] [Thread-1 (]: Finished running node model.tfl_analytics.stg_tube_lines
+[0m16:46:12.461290 [debug] [MainThread]: On master: COMMIT
+[0m16:46:12.461962 [debug] [MainThread]: Using postgres connection "master"
+[0m16:46:12.462513 [debug] [MainThread]: On master: COMMIT
+[0m16:46:12.462967 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m16:46:12.519298 [debug] [MainThread]: SQL status: COMMIT in 0.056 seconds
+[0m16:46:12.520443 [debug] [MainThread]: On master: Close
+[0m16:46:12.522165 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:46:12.523232 [debug] [MainThread]: Connection 'create_tfl_analytics' was properly closed.
+[0m16:46:12.523990 [debug] [MainThread]: Connection 'list_tfl_analytics' was properly closed.
+[0m16:46:12.524671 [debug] [MainThread]: Connection 'model.tfl_analytics.stg_tube_lines' was properly closed.
+[0m16:46:12.526534 [info ] [MainThread]: 
+[0m16:46:12.527722 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 1.64 seconds (1.64s).
+[0m16:46:12.529026 [debug] [MainThread]: Command end result
+[0m16:46:12.571388 [debug] [MainThread]: Wrote artifact WritableManifest to dbt\target\manifest.json
+[0m16:46:12.576438 [debug] [MainThread]: Wrote artifact SemanticManifest to dbt\target\semantic_manifest.json
+[0m16:46:12.580985 [debug] [MainThread]: Wrote artifact OsiDocument to dbt\target\osi_document.json
+[0m16:46:12.603050 [debug] [MainThread]: Wrote artifact RunExecutionResult to dbt\target\run_results.json
+[0m16:46:12.603852 [info ] [MainThread]: 
+[0m16:46:12.605046 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:46:12.606059 [info ] [MainThread]: 
+[0m16:46:12.607274 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=1
+[0m16:46:12.608959 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- EnvironmentVariableNamespaceDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m16:46:12.611799 [debug] [MainThread]: Command `dbt run` succeeded at 16:46:12.611419 after 4.05 seconds
+[0m16:46:12.612646 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D43DF5FA70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D43DE9EC30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D43DCAB6D0>]}
+[0m16:46:12.613447 [debug] [MainThread]: Flushing usage events
+[0m16:46:13.423078 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:47:40.225864 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198EE53E3C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198EB3ED810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198F0B77C50>]}
+
+
+============================== 16:47:40.232752 | 00c8e368-c972-422e-a9e2-ea40191c943d ==============================
+[0m16:47:40.232752 [info ] [MainThread]: Running with dbt=1.12.7
+[0m16:47:40.233687 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt ls --project-dir dbt --profiles-dir dbt', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'dbt\\logs'}
+[0m16:47:40.234143 [warn ] [MainThread]: [[33mWARNING[0m][EnvironmentVariableNamespaceDeprecation]: Deprecated
+functionality
+Found custom environment variable `DBT_ENGINE_MANAGE_STATE` in the environment.
+The prefix `DBT_ENGINE` is reserved for dbt engine environment variables. Custom
+environment variables with the prefix `DBT_ENGINE` may cause collisions and
+runtime errors.
+[0m16:47:40.234688 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '00c8e368-c972-422e-a9e2-ea40191c943d', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198F0B7AC40>]}
+[0m16:47:40.537367 [info ] [MainThread]: State adapter: dbt-state v2.64.0 is disabled
+[0m16:47:40.573557 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '00c8e368-c972-422e-a9e2-ea40191c943d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198EDED4490>]}
+[0m16:47:40.669890 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '00c8e368-c972-422e-a9e2-ea40191c943d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198F0A1AE50>]}
+[0m16:47:40.671415 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m16:47:40.952745 [debug] [MainThread]: checksum: 3231035334bfc49aa985ad8056e9ca553f6df8558700f2e162d2889609c5a75a, vars: {}, profile: tfl_analytics, target: dev, version: 1.12.7
+[0m16:47:41.206357 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:47:41.206714 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m16:47:41.206997 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:47:41.222510 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '00c8e368-c972-422e-a9e2-ea40191c943d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198F11659A0>]}
+[0m16:47:41.365117 [debug] [MainThread]: Wrote artifact WritableManifest to dbt\target\manifest.json
+[0m16:47:41.368224 [debug] [MainThread]: Wrote artifact SemanticManifest to dbt\target\semantic_manifest.json
+[0m16:47:41.414127 [debug] [MainThread]: Wrote artifact OsiDocument to dbt\target\osi_document.json
+[0m16:47:41.448751 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '00c8e368-c972-422e-a9e2-ea40191c943d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198F1360130>]}
+[0m16:47:41.449233 [info ] [MainThread]: Found 2 models, 2 sources, 477 macros
+[0m16:47:41.449704 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '00c8e368-c972-422e-a9e2-ea40191c943d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198F13586D0>]}
+[0m16:47:41.450796 [info ] [MainThread]: tfl_analytics.stg_tube_lines
+[0m16:47:41.451199 [info ] [MainThread]: tfl_analytics.stg_tube_status_snapshots
+[0m16:47:41.451518 [info ] [MainThread]: source:tfl_analytics.tfl.tube_lines
+[0m16:47:41.451822 [info ] [MainThread]: source:tfl_analytics.tfl.tube_status_snapshots
+[0m16:47:41.452388 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- EnvironmentVariableNamespaceDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m16:47:41.453474 [debug] [MainThread]: Command `dbt ls` succeeded at 16:47:41.453355 after 1.62 seconds
+[0m16:47:41.453813 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198F0971D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198F1319180>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198F1319230>]}
+[0m16:47:41.454135 [debug] [MainThread]: Flushing usage events
+[0m16:47:42.290772 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:49:27.624016 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C571D423C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C56EBED810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5743C3B10>]}
+
+
+============================== 16:49:27.632472 | e8dac856-5c5c-484e-82da-e06fc84f04cd ==============================
+[0m16:49:27.632472 [info ] [MainThread]: Running with dbt=1.12.7
+[0m16:49:27.633553 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run --project-dir dbt --profiles-dir dbt', 'log_path': 'dbt\\logs'}
+[0m16:49:27.634110 [warn ] [MainThread]: [[33mWARNING[0m][EnvironmentVariableNamespaceDeprecation]: Deprecated
+functionality
+Found custom environment variable `DBT_ENGINE_MANAGE_STATE` in the environment.
+The prefix `DBT_ENGINE` is reserved for dbt engine environment variables. Custom
+environment variables with the prefix `DBT_ENGINE` may cause collisions and
+runtime errors.
+[0m16:49:27.634841 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'e8dac856-5c5c-484e-82da-e06fc84f04cd', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5743B3A80>]}
+[0m16:49:28.040726 [info ] [MainThread]: State adapter: dbt-state v2.64.0 is disabled
+[0m16:49:28.056431 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e8dac856-5c5c-484e-82da-e06fc84f04cd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5716D4490>]}
+[0m16:49:28.146508 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e8dac856-5c5c-484e-82da-e06fc84f04cd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C57421BE50>]}
+[0m16:49:28.148165 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m16:49:28.471068 [debug] [MainThread]: checksum: 3231035334bfc49aa985ad8056e9ca553f6df8558700f2e162d2889609c5a75a, vars: {}, profile: tfl_analytics, target: dev, version: 1.12.7
+[0m16:49:28.708771 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m16:49:28.709293 [debug] [MainThread]: Partial parsing: updated file: tfl_analytics://models\stg_tube_status_snapshots.sql
+[0m16:49:29.070995 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e8dac856-5c5c-484e-82da-e06fc84f04cd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C57465BC50>]}
+[0m16:49:29.187361 [debug] [MainThread]: Wrote artifact WritableManifest to dbt\target\manifest.json
+[0m16:49:29.190228 [debug] [MainThread]: Wrote artifact SemanticManifest to dbt\target\semantic_manifest.json
+[0m16:49:29.226430 [debug] [MainThread]: Wrote artifact OsiDocument to dbt\target\osi_document.json
+[0m16:49:29.242529 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e8dac856-5c5c-484e-82da-e06fc84f04cd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C574D292B0>]}
+[0m16:49:29.242959 [info ] [MainThread]: Found 2 models, 2 sources, 477 macros
+[0m16:49:29.243336 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e8dac856-5c5c-484e-82da-e06fc84f04cd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C574D88940>]}
+[0m16:49:29.244820 [info ] [MainThread]: 
+[0m16:49:29.245282 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m16:49:29.245844 [info ] [MainThread]: 
+[0m16:49:29.246554 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m16:49:29.252834 [debug] [ThreadPool]: Acquiring new postgres connection 'list_tfl'
+[0m16:49:29.368306 [debug] [ThreadPool]: Using postgres connection "list_tfl"
+[0m16:49:29.368681 [debug] [ThreadPool]: On list_tfl: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "connection_name": "list_tfl"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m16:49:29.368964 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:49:29.447487 [debug] [ThreadPool]: SQL status: SELECT 5 in 0.078 seconds
+[0m16:49:29.448665 [debug] [ThreadPool]: On list_tfl: Close
+[0m16:49:29.451969 [debug] [ThreadPool]: Acquiring new postgres connection 'list_tfl_analytics'
+[0m16:49:29.456197 [debug] [ThreadPool]: Using postgres connection "list_tfl_analytics"
+[0m16:49:29.456603 [debug] [ThreadPool]: On list_tfl_analytics: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "connection_name": "list_tfl_analytics"} */
+select
+      'tfl' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'analytics'
+    union all
+    select
+      'tfl' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'analytics'
+    union all
+    select
+      'tfl' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'analytics'
+    union all
+    select distinct
+     'tfl' as database,
+     proname as name,
+     ns.nspname as schema,
+     'function' as type
+    from pg_proc
+     join pg_namespace as ns on pronamespace = ns.oid
+    where ns.nspname ilike 'analytics'
+  
+[0m16:49:29.456868 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:49:29.486934 [debug] [ThreadPool]: SQL status: SELECT 1 in 0.030 seconds
+[0m16:49:29.488196 [debug] [ThreadPool]: On list_tfl_analytics: ROLLBACK
+[0m16:49:29.489783 [debug] [ThreadPool]: On list_tfl_analytics: Close
+[0m16:49:29.494333 [debug] [MainThread]: Using postgres connection "master"
+[0m16:49:29.495070 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m16:49:29.495420 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:49:29.545419 [debug] [MainThread]: SQL status: SELECT 1 in 0.050 seconds
+[0m16:49:29.546754 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e8dac856-5c5c-484e-82da-e06fc84f04cd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C574D02810>]}
+[0m16:49:29.547170 [debug] [MainThread]: On master: ROLLBACK
+[0m16:49:29.548200 [debug] [MainThread]: On master: COMMIT
+[0m16:49:29.548468 [debug] [MainThread]: Using postgres connection "master"
+[0m16:49:29.548679 [debug] [MainThread]: On master: COMMIT
+[0m16:49:29.549651 [debug] [MainThread]: SQL status: COMMIT in 0.001 seconds
+[0m16:49:29.549945 [debug] [MainThread]: On master: Close
+[0m16:49:29.559788 [debug] [Thread-1 (]: Began running node model.tfl_analytics.stg_tube_lines
+[0m16:49:29.560486 [debug] [Thread-2 (]: Began running node model.tfl_analytics.stg_tube_status_snapshots
+[0m16:49:29.561187 [info ] [Thread-1 (]: 1 of 2 START sql view model analytics.stg_tube_lines ........................... [RUN]
+[0m16:49:29.562564 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.tfl_analytics.stg_tube_lines'
+[0m16:49:29.561923 [info ] [Thread-2 (]: 2 of 2 START sql view model analytics.stg_tube_status_snapshots ................ [RUN]
+[0m16:49:29.563412 [debug] [Thread-1 (]: Began compiling node model.tfl_analytics.stg_tube_lines
+[0m16:49:29.564342 [debug] [Thread-2 (]: Acquiring new postgres connection 'model.tfl_analytics.stg_tube_status_snapshots'
+[0m16:49:29.569966 [debug] [Thread-1 (]: Writing injected SQL for node "model.tfl_analytics.stg_tube_lines"
+[0m16:49:29.570548 [debug] [Thread-2 (]: Began compiling node model.tfl_analytics.stg_tube_status_snapshots
+[0m16:49:29.572147 [debug] [Thread-2 (]: Writing injected SQL for node "model.tfl_analytics.stg_tube_status_snapshots"
+[0m16:49:29.573070 [debug] [Thread-2 (]: Began executing node model.tfl_analytics.stg_tube_status_snapshots
+[0m16:49:29.573540 [debug] [Thread-1 (]: Began executing node model.tfl_analytics.stg_tube_lines
+[0m16:49:29.605652 [debug] [Thread-2 (]: Writing runtime sql for node "model.tfl_analytics.stg_tube_status_snapshots"
+[0m16:49:29.608044 [debug] [Thread-1 (]: Writing runtime sql for node "model.tfl_analytics.stg_tube_lines"
+[0m16:49:29.609285 [debug] [Thread-1 (]: Using postgres connection "model.tfl_analytics.stg_tube_lines"
+[0m16:49:29.609810 [debug] [Thread-2 (]: Using postgres connection "model.tfl_analytics.stg_tube_status_snapshots"
+[0m16:49:29.610201 [debug] [Thread-1 (]: On model.tfl_analytics.stg_tube_lines: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "node_id": "model.tfl_analytics.stg_tube_lines"} */
+
+  create view "tfl"."analytics"."stg_tube_lines__dbt_tmp"
+    
+    
+  as (
+    select line_id, line_name, ingested_at from "tfl"."public"."tube_lines"
+  );
+[0m16:49:29.610651 [debug] [Thread-2 (]: On model.tfl_analytics.stg_tube_status_snapshots: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "node_id": "model.tfl_analytics.stg_tube_status_snapshots"} */
+
+  create view "tfl"."analytics"."stg_tube_status_snapshots__dbt_tmp"
+    
+    
+  as (
+    select snapshot_id, line_id, observed_at, status_severity, status_description
+from "tfl"."public"."tube_status_snapshots"
+  );
+[0m16:49:29.611046 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m16:49:29.611593 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m16:49:29.641873 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.031 seconds
+[0m16:49:29.650353 [debug] [Thread-1 (]: Using postgres connection "model.tfl_analytics.stg_tube_lines"
+[0m16:49:29.651082 [debug] [Thread-2 (]: SQL status: CREATE VIEW in 0.039 seconds
+[0m16:49:29.652029 [debug] [Thread-1 (]: On model.tfl_analytics.stg_tube_lines: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "node_id": "model.tfl_analytics.stg_tube_lines"} */
+alter table "tfl"."analytics"."stg_tube_lines" rename to "stg_tube_lines__dbt_backup"
+[0m16:49:29.654723 [debug] [Thread-2 (]: Using postgres connection "model.tfl_analytics.stg_tube_status_snapshots"
+[0m16:49:29.655339 [debug] [Thread-2 (]: On model.tfl_analytics.stg_tube_status_snapshots: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "node_id": "model.tfl_analytics.stg_tube_status_snapshots"} */
+alter table "tfl"."analytics"."stg_tube_status_snapshots__dbt_tmp" rename to "stg_tube_status_snapshots"
+[0m16:49:29.657454 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m16:49:29.657944 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.003 seconds
+[0m16:49:29.671139 [debug] [Thread-2 (]: On model.tfl_analytics.stg_tube_status_snapshots: COMMIT
+[0m16:49:29.673056 [debug] [Thread-1 (]: Using postgres connection "model.tfl_analytics.stg_tube_lines"
+[0m16:49:29.673457 [debug] [Thread-2 (]: Using postgres connection "model.tfl_analytics.stg_tube_status_snapshots"
+[0m16:49:29.673789 [debug] [Thread-1 (]: On model.tfl_analytics.stg_tube_lines: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "node_id": "model.tfl_analytics.stg_tube_lines"} */
+alter table "tfl"."analytics"."stg_tube_lines__dbt_tmp" rename to "stg_tube_lines"
+[0m16:49:29.674128 [debug] [Thread-2 (]: On model.tfl_analytics.stg_tube_status_snapshots: COMMIT
+[0m16:49:29.675935 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m16:49:29.679951 [debug] [Thread-1 (]: On model.tfl_analytics.stg_tube_lines: COMMIT
+[0m16:49:29.680386 [debug] [Thread-1 (]: Using postgres connection "model.tfl_analytics.stg_tube_lines"
+[0m16:49:29.680681 [debug] [Thread-1 (]: On model.tfl_analytics.stg_tube_lines: COMMIT
+[0m16:49:29.680971 [debug] [Thread-2 (]: SQL status: COMMIT in 0.006 seconds
+[0m16:49:29.685967 [debug] [Thread-2 (]: Applying DROP to: "tfl"."analytics"."stg_tube_status_snapshots__dbt_backup"
+[0m16:49:29.686412 [debug] [Thread-1 (]: SQL status: COMMIT in 0.005 seconds
+[0m16:49:29.690160 [debug] [Thread-2 (]: Using postgres connection "model.tfl_analytics.stg_tube_status_snapshots"
+[0m16:49:29.692737 [debug] [Thread-1 (]: Applying DROP to: "tfl"."analytics"."stg_tube_lines__dbt_backup"
+[0m16:49:29.693450 [debug] [Thread-2 (]: On model.tfl_analytics.stg_tube_status_snapshots: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "node_id": "model.tfl_analytics.stg_tube_status_snapshots"} */
+drop view if exists "tfl"."analytics"."stg_tube_status_snapshots__dbt_backup" cascade
+[0m16:49:29.694546 [debug] [Thread-1 (]: Using postgres connection "model.tfl_analytics.stg_tube_lines"
+[0m16:49:29.695492 [debug] [Thread-1 (]: On model.tfl_analytics.stg_tube_lines: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "node_id": "model.tfl_analytics.stg_tube_lines"} */
+drop view if exists "tfl"."analytics"."stg_tube_lines__dbt_backup" cascade
+[0m16:49:29.699192 [debug] [Thread-2 (]: SQL status: DROP VIEW in 0.004 seconds
+[0m16:49:29.706107 [debug] [Thread-2 (]: On model.tfl_analytics.stg_tube_status_snapshots: Close
+[0m16:49:29.712595 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e8dac856-5c5c-484e-82da-e06fc84f04cd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C574F75020>]}
+[0m16:49:29.713708 [info ] [Thread-2 (]: 2 of 2 OK created sql view model analytics.stg_tube_status_snapshots ........... [[32mCREATE VIEW[0m in 0.14s]
+[0m16:49:29.715314 [debug] [Thread-2 (]: Finished running node model.tfl_analytics.stg_tube_status_snapshots
+[0m16:49:29.718742 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.023 seconds
+[0m16:49:29.719942 [debug] [Thread-1 (]: On model.tfl_analytics.stg_tube_lines: Close
+[0m16:49:29.720753 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e8dac856-5c5c-484e-82da-e06fc84f04cd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C57511B110>]}
+[0m16:49:29.721519 [info ] [Thread-1 (]: 1 of 2 OK created sql view model analytics.stg_tube_lines ...................... [[32mCREATE VIEW[0m in 0.16s]
+[0m16:49:29.722576 [debug] [Thread-1 (]: Finished running node model.tfl_analytics.stg_tube_lines
+[0m16:49:29.726030 [debug] [MainThread]: On master: COMMIT
+[0m16:49:29.726790 [debug] [MainThread]: Using postgres connection "master"
+[0m16:49:29.727186 [debug] [MainThread]: On master: COMMIT
+[0m16:49:29.727958 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m16:49:29.752431 [debug] [MainThread]: SQL status: COMMIT in 0.025 seconds
+[0m16:49:29.752852 [debug] [MainThread]: On master: Close
+[0m16:49:29.753357 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:49:29.753692 [debug] [MainThread]: Connection 'list_tfl' was properly closed.
+[0m16:49:29.754021 [debug] [MainThread]: Connection 'list_tfl_analytics' was properly closed.
+[0m16:49:29.754291 [debug] [MainThread]: Connection 'model.tfl_analytics.stg_tube_lines' was properly closed.
+[0m16:49:29.754499 [debug] [MainThread]: Connection 'model.tfl_analytics.stg_tube_status_snapshots' was properly closed.
+[0m16:49:29.755214 [info ] [MainThread]: 
+[0m16:49:29.755887 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 0.51 seconds (0.51s).
+[0m16:49:29.756799 [debug] [MainThread]: Command end result
+[0m16:49:29.794034 [debug] [MainThread]: Wrote artifact WritableManifest to dbt\target\manifest.json
+[0m16:49:29.798934 [debug] [MainThread]: Wrote artifact SemanticManifest to dbt\target\semantic_manifest.json
+[0m16:49:29.803678 [debug] [MainThread]: Wrote artifact OsiDocument to dbt\target\osi_document.json
+[0m16:49:29.816852 [debug] [MainThread]: Wrote artifact RunExecutionResult to dbt\target\run_results.json
+[0m16:49:29.817408 [info ] [MainThread]: 
+[0m16:49:29.817947 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:49:29.818377 [info ] [MainThread]: 
+[0m16:49:29.818721 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=2
+[0m16:49:29.819238 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- EnvironmentVariableNamespaceDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m16:49:29.821377 [debug] [MainThread]: Command `dbt run` succeeded at 16:49:29.821215 after 2.52 seconds
+[0m16:49:29.821753 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C574CA6150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C574D837D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C574412A50>]}
+[0m16:49:29.822111 [debug] [MainThread]: Flushing usage events
+[0m16:49:30.618065 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:51:05.525233 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0E50123C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0E1ED9810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0E76B3B10>]}
+
+
+============================== 16:51:05.529260 | 08b50fc7-f567-4042-a382-4fa4ca25219c ==============================
+[0m16:51:05.529260 [info ] [MainThread]: Running with dbt=1.12.7
+[0m16:51:05.529941 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt test --project-dir dbt --profiles-dir dbt', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'dbt\\logs'}
+[0m16:51:05.530468 [warn ] [MainThread]: [[33mWARNING[0m][EnvironmentVariableNamespaceDeprecation]: Deprecated
+functionality
+Found custom environment variable `DBT_ENGINE_MANAGE_STATE` in the environment.
+The prefix `DBT_ENGINE` is reserved for dbt engine environment variables. Custom
+environment variables with the prefix `DBT_ENGINE` may cause collisions and
+runtime errors.
+[0m16:51:05.531004 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '08b50fc7-f567-4042-a382-4fa4ca25219c', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0E769FA80>]}
+[0m16:51:05.792171 [info ] [MainThread]: State adapter: dbt-state v2.64.0 is disabled
+[0m16:51:05.809259 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '08b50fc7-f567-4042-a382-4fa4ca25219c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0E49C4490>]}
+[0m16:51:05.917560 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '08b50fc7-f567-4042-a382-4fa4ca25219c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0E750BE50>]}
+[0m16:51:05.920703 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m16:51:06.281420 [debug] [MainThread]: checksum: 3231035334bfc49aa985ad8056e9ca553f6df8558700f2e162d2889609c5a75a, vars: {}, profile: tfl_analytics, target: dev, version: 1.12.7
+[0m16:51:06.719467 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m16:51:06.721062 [debug] [MainThread]: Partial parsing: added file: tfl_analytics://models\schema.yml
+[0m16:51:07.377744 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '08b50fc7-f567-4042-a382-4fa4ca25219c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0E7E7B3E0>]}
+[0m16:51:07.529322 [debug] [MainThread]: Wrote artifact WritableManifest to dbt\target\manifest.json
+[0m16:51:07.532214 [debug] [MainThread]: Wrote artifact SemanticManifest to dbt\target\semantic_manifest.json
+[0m16:51:07.558160 [debug] [MainThread]: Wrote artifact OsiDocument to dbt\target\osi_document.json
+[0m16:51:07.590501 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '08b50fc7-f567-4042-a382-4fa4ca25219c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0E807ACF0>]}
+[0m16:51:07.591155 [info ] [MainThread]: Found 2 models, 6 data tests, 2 sources, 477 macros
+[0m16:51:07.591653 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '08b50fc7-f567-4042-a382-4fa4ca25219c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0E7C1B930>]}
+[0m16:51:07.593426 [info ] [MainThread]: 
+[0m16:51:07.593918 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m16:51:07.594291 [info ] [MainThread]: 
+[0m16:51:07.594841 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m16:51:07.600085 [debug] [ThreadPool]: Acquiring new postgres connection 'list_tfl_analytics'
+[0m16:51:07.729742 [debug] [ThreadPool]: Using postgres connection "list_tfl_analytics"
+[0m16:51:07.730677 [debug] [ThreadPool]: On list_tfl_analytics: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "connection_name": "list_tfl_analytics"} */
+select
+      'tfl' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'analytics'
+    union all
+    select
+      'tfl' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'analytics'
+    union all
+    select
+      'tfl' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'analytics'
+    union all
+    select distinct
+     'tfl' as database,
+     proname as name,
+     ns.nspname as schema,
+     'function' as type
+    from pg_proc
+     join pg_namespace as ns on pronamespace = ns.oid
+    where ns.nspname ilike 'analytics'
+  
+[0m16:51:07.731307 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:51:07.791090 [debug] [ThreadPool]: SQL status: SELECT 2 in 0.060 seconds
+[0m16:51:07.792405 [debug] [ThreadPool]: On list_tfl_analytics: ROLLBACK
+[0m16:51:07.793359 [debug] [ThreadPool]: On list_tfl_analytics: Close
+[0m16:51:07.797693 [debug] [MainThread]: Using postgres connection "master"
+[0m16:51:07.798165 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m16:51:07.798500 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:51:07.844876 [debug] [MainThread]: SQL status: SELECT 2 in 0.046 seconds
+[0m16:51:07.846007 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '08b50fc7-f567-4042-a382-4fa4ca25219c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0E8179550>]}
+[0m16:51:07.846426 [debug] [MainThread]: On master: ROLLBACK
+[0m16:51:07.847768 [debug] [MainThread]: On master: COMMIT
+[0m16:51:07.848028 [debug] [MainThread]: Using postgres connection "master"
+[0m16:51:07.848216 [debug] [MainThread]: On master: COMMIT
+[0m16:51:07.849822 [debug] [MainThread]: SQL status: COMMIT in 0.001 seconds
+[0m16:51:07.850133 [debug] [MainThread]: On master: Close
+[0m16:51:07.854742 [debug] [Thread-1 (]: Began running node test.tfl_analytics.not_null_stg_tube_lines_line_id.4ed00131fb
+[0m16:51:07.855189 [info ] [Thread-1 (]: 1 of 6 START test not_null_stg_tube_lines_line_id .............................. [RUN]
+[0m16:51:07.855806 [debug] [Thread-1 (]: Acquiring new postgres connection 'test.tfl_analytics.not_null_stg_tube_lines_line_id.4ed00131fb'
+[0m16:51:07.856384 [debug] [Thread-2 (]: Began running node test.tfl_analytics.not_null_stg_tube_status_snapshots_line_id.e303fc8bba
+[0m16:51:07.856957 [debug] [Thread-3 (]: Began running node test.tfl_analytics.not_null_stg_tube_status_snapshots_snapshot_id.ab3de7f1e2
+[0m16:51:07.857289 [debug] [Thread-4 (]: Began running node test.tfl_analytics.relationships_stg_tube_status_snapshots_line_id__line_id__ref_stg_tube_lines_.5d0544cc75
+[0m16:51:07.857545 [debug] [Thread-1 (]: Began compiling node test.tfl_analytics.not_null_stg_tube_lines_line_id.4ed00131fb
+[0m16:51:07.869365 [debug] [Thread-1 (]: Writing injected SQL for node "test.tfl_analytics.not_null_stg_tube_lines_line_id.4ed00131fb"
+[0m16:51:07.857844 [info ] [Thread-2 (]: 2 of 6 START test not_null_stg_tube_status_snapshots_line_id ................... [RUN]
+[0m16:51:07.870373 [debug] [Thread-2 (]: Acquiring new postgres connection 'test.tfl_analytics.not_null_stg_tube_status_snapshots_line_id.e303fc8bba'
+[0m16:51:07.858088 [info ] [Thread-3 (]: 3 of 6 START test not_null_stg_tube_status_snapshots_snapshot_id ............... [RUN]
+[0m16:51:07.871700 [debug] [Thread-2 (]: Began compiling node test.tfl_analytics.not_null_stg_tube_status_snapshots_line_id.e303fc8bba
+[0m16:51:07.872547 [debug] [Thread-3 (]: Acquiring new postgres connection 'test.tfl_analytics.not_null_stg_tube_status_snapshots_snapshot_id.ab3de7f1e2'
+[0m16:51:07.858359 [info ] [Thread-4 (]: 4 of 6 START test relationships_stg_tube_status_snapshots_line_id__line_id__ref_stg_tube_lines_  [RUN]
+[0m16:51:07.878832 [debug] [Thread-2 (]: Writing injected SQL for node "test.tfl_analytics.not_null_stg_tube_status_snapshots_line_id.e303fc8bba"
+[0m16:51:07.879417 [debug] [Thread-3 (]: Began compiling node test.tfl_analytics.not_null_stg_tube_status_snapshots_snapshot_id.ab3de7f1e2
+[0m16:51:07.879965 [debug] [Thread-4 (]: Acquiring new postgres connection 'test.tfl_analytics.relationships_stg_tube_status_snapshots_line_id__line_id__ref_stg_tube_lines_.5d0544cc75'
+[0m16:51:07.880712 [debug] [Thread-1 (]: Began executing node test.tfl_analytics.not_null_stg_tube_lines_line_id.4ed00131fb
+[0m16:51:07.888163 [debug] [Thread-3 (]: Writing injected SQL for node "test.tfl_analytics.not_null_stg_tube_status_snapshots_snapshot_id.ab3de7f1e2"
+[0m16:51:07.888672 [debug] [Thread-4 (]: Began compiling node test.tfl_analytics.relationships_stg_tube_status_snapshots_line_id__line_id__ref_stg_tube_lines_.5d0544cc75
+[0m16:51:07.905525 [debug] [Thread-1 (]: Writing runtime sql for node "test.tfl_analytics.not_null_stg_tube_lines_line_id.4ed00131fb"
+[0m16:51:07.913091 [debug] [Thread-4 (]: Writing injected SQL for node "test.tfl_analytics.relationships_stg_tube_status_snapshots_line_id__line_id__ref_stg_tube_lines_.5d0544cc75"
+[0m16:51:07.913749 [debug] [Thread-2 (]: Began executing node test.tfl_analytics.not_null_stg_tube_status_snapshots_line_id.e303fc8bba
+[0m16:51:07.917936 [debug] [Thread-2 (]: Writing runtime sql for node "test.tfl_analytics.not_null_stg_tube_status_snapshots_line_id.e303fc8bba"
+[0m16:51:07.920270 [debug] [Thread-3 (]: Began executing node test.tfl_analytics.not_null_stg_tube_status_snapshots_snapshot_id.ab3de7f1e2
+[0m16:51:07.921827 [debug] [Thread-3 (]: Writing runtime sql for node "test.tfl_analytics.not_null_stg_tube_status_snapshots_snapshot_id.ab3de7f1e2"
+[0m16:51:07.922774 [debug] [Thread-4 (]: Began executing node test.tfl_analytics.relationships_stg_tube_status_snapshots_line_id__line_id__ref_stg_tube_lines_.5d0544cc75
+[0m16:51:07.924176 [debug] [Thread-4 (]: Writing runtime sql for node "test.tfl_analytics.relationships_stg_tube_status_snapshots_line_id__line_id__ref_stg_tube_lines_.5d0544cc75"
+[0m16:51:07.925000 [debug] [Thread-2 (]: Using postgres connection "test.tfl_analytics.not_null_stg_tube_status_snapshots_line_id.e303fc8bba"
+[0m16:51:07.925403 [debug] [Thread-2 (]: On test.tfl_analytics.not_null_stg_tube_status_snapshots_line_id.e303fc8bba: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "node_id": "test.tfl_analytics.not_null_stg_tube_status_snapshots_line_id.e303fc8bba"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select line_id
+from "tfl"."analytics"."stg_tube_status_snapshots"
+where line_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m16:51:07.925752 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m16:51:07.926123 [debug] [Thread-1 (]: Using postgres connection "test.tfl_analytics.not_null_stg_tube_lines_line_id.4ed00131fb"
+[0m16:51:07.926572 [debug] [Thread-4 (]: Using postgres connection "test.tfl_analytics.relationships_stg_tube_status_snapshots_line_id__line_id__ref_stg_tube_lines_.5d0544cc75"
+[0m16:51:07.927188 [debug] [Thread-3 (]: Using postgres connection "test.tfl_analytics.not_null_stg_tube_status_snapshots_snapshot_id.ab3de7f1e2"
+[0m16:51:07.927566 [debug] [Thread-1 (]: On test.tfl_analytics.not_null_stg_tube_lines_line_id.4ed00131fb: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "node_id": "test.tfl_analytics.not_null_stg_tube_lines_line_id.4ed00131fb"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select line_id
+from "tfl"."analytics"."stg_tube_lines"
+where line_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m16:51:07.927942 [debug] [Thread-4 (]: On test.tfl_analytics.relationships_stg_tube_status_snapshots_line_id__line_id__ref_stg_tube_lines_.5d0544cc75: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "node_id": "test.tfl_analytics.relationships_stg_tube_status_snapshots_line_id__line_id__ref_stg_tube_lines_.5d0544cc75"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select line_id as from_field
+    from "tfl"."analytics"."stg_tube_status_snapshots"
+    where line_id is not null
+),
+
+parent as (
+    select line_id as to_field
+    from "tfl"."analytics"."stg_tube_lines"
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m16:51:07.928237 [debug] [Thread-3 (]: On test.tfl_analytics.not_null_stg_tube_status_snapshots_snapshot_id.ab3de7f1e2: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "node_id": "test.tfl_analytics.not_null_stg_tube_status_snapshots_snapshot_id.ab3de7f1e2"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select snapshot_id
+from "tfl"."analytics"."stg_tube_status_snapshots"
+where snapshot_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m16:51:07.928525 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m16:51:07.928829 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m16:51:07.929065 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m16:51:07.971680 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.045 seconds
+[0m16:51:07.972866 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.044 seconds
+[0m16:51:07.973444 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.045 seconds
+[0m16:51:07.980865 [debug] [Thread-2 (]: On test.tfl_analytics.not_null_stg_tube_status_snapshots_line_id.e303fc8bba: ROLLBACK
+[0m16:51:07.981331 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.052 seconds
+[0m16:51:07.982734 [debug] [Thread-3 (]: On test.tfl_analytics.not_null_stg_tube_status_snapshots_snapshot_id.ab3de7f1e2: ROLLBACK
+[0m16:51:07.984173 [debug] [Thread-1 (]: On test.tfl_analytics.not_null_stg_tube_lines_line_id.4ed00131fb: ROLLBACK
+[0m16:51:07.985695 [debug] [Thread-4 (]: On test.tfl_analytics.relationships_stg_tube_status_snapshots_line_id__line_id__ref_stg_tube_lines_.5d0544cc75: ROLLBACK
+[0m16:51:07.986052 [debug] [Thread-2 (]: On test.tfl_analytics.not_null_stg_tube_status_snapshots_line_id.e303fc8bba: Close
+[0m16:51:07.987968 [debug] [Thread-1 (]: On test.tfl_analytics.not_null_stg_tube_lines_line_id.4ed00131fb: Close
+[0m16:51:07.988554 [debug] [Thread-4 (]: On test.tfl_analytics.relationships_stg_tube_status_snapshots_line_id__line_id__ref_stg_tube_lines_.5d0544cc75: Close
+[0m16:51:07.987506 [info ] [Thread-2 (]: 2 of 6 PASS not_null_stg_tube_status_snapshots_line_id ......................... [[32mPASS[0m in 0.12s]
+[0m16:51:07.991311 [debug] [Thread-3 (]: On test.tfl_analytics.not_null_stg_tube_status_snapshots_snapshot_id.ab3de7f1e2: Close
+[0m16:51:07.990443 [info ] [Thread-1 (]: 1 of 6 PASS not_null_stg_tube_lines_line_id .................................... [[32mPASS[0m in 0.13s]
+[0m16:51:07.992325 [info ] [Thread-4 (]: 4 of 6 PASS relationships_stg_tube_status_snapshots_line_id__line_id__ref_stg_tube_lines_  [[32mPASS[0m in 0.11s]
+[0m16:51:07.994095 [debug] [Thread-2 (]: Finished running node test.tfl_analytics.not_null_stg_tube_status_snapshots_line_id.e303fc8bba
+[0m16:51:07.996114 [debug] [Thread-1 (]: Finished running node test.tfl_analytics.not_null_stg_tube_lines_line_id.4ed00131fb
+[0m16:51:07.999012 [debug] [Thread-4 (]: Finished running node test.tfl_analytics.relationships_stg_tube_status_snapshots_line_id__line_id__ref_stg_tube_lines_.5d0544cc75
+[0m16:51:07.997390 [info ] [Thread-3 (]: 3 of 6 PASS not_null_stg_tube_status_snapshots_snapshot_id ..................... [[32mPASS[0m in 0.12s]
+[0m16:51:08.001112 [debug] [Thread-2 (]: Began running node test.tfl_analytics.unique_stg_tube_lines_line_id.382e49adf7
+[0m16:51:08.003565 [debug] [Thread-1 (]: Began running node test.tfl_analytics.unique_stg_tube_status_snapshots_snapshot_id.a20fae9ab3
+[0m16:51:08.004888 [debug] [Thread-3 (]: Finished running node test.tfl_analytics.not_null_stg_tube_status_snapshots_snapshot_id.ab3de7f1e2
+[0m16:51:08.005246 [info ] [Thread-2 (]: 5 of 6 START test unique_stg_tube_lines_line_id ................................ [RUN]
+[0m16:51:08.006234 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.tfl_analytics.not_null_stg_tube_status_snapshots_line_id.e303fc8bba, now test.tfl_analytics.unique_stg_tube_lines_line_id.382e49adf7)
+[0m16:51:08.007028 [debug] [Thread-2 (]: Began compiling node test.tfl_analytics.unique_stg_tube_lines_line_id.382e49adf7
+[0m16:51:08.019061 [debug] [Thread-2 (]: Writing injected SQL for node "test.tfl_analytics.unique_stg_tube_lines_line_id.382e49adf7"
+[0m16:51:08.005571 [info ] [Thread-1 (]: 6 of 6 START test unique_stg_tube_status_snapshots_snapshot_id ................. [RUN]
+[0m16:51:08.022061 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.tfl_analytics.not_null_stg_tube_lines_line_id.4ed00131fb, now test.tfl_analytics.unique_stg_tube_status_snapshots_snapshot_id.a20fae9ab3)
+[0m16:51:08.023439 [debug] [Thread-1 (]: Began compiling node test.tfl_analytics.unique_stg_tube_status_snapshots_snapshot_id.a20fae9ab3
+[0m16:51:08.031446 [debug] [Thread-1 (]: Writing injected SQL for node "test.tfl_analytics.unique_stg_tube_status_snapshots_snapshot_id.a20fae9ab3"
+[0m16:51:08.032772 [debug] [Thread-2 (]: Began executing node test.tfl_analytics.unique_stg_tube_lines_line_id.382e49adf7
+[0m16:51:08.037323 [debug] [Thread-2 (]: Writing runtime sql for node "test.tfl_analytics.unique_stg_tube_lines_line_id.382e49adf7"
+[0m16:51:08.038771 [debug] [Thread-1 (]: Began executing node test.tfl_analytics.unique_stg_tube_status_snapshots_snapshot_id.a20fae9ab3
+[0m16:51:08.041860 [debug] [Thread-1 (]: Writing runtime sql for node "test.tfl_analytics.unique_stg_tube_status_snapshots_snapshot_id.a20fae9ab3"
+[0m16:51:08.043506 [debug] [Thread-2 (]: Using postgres connection "test.tfl_analytics.unique_stg_tube_lines_line_id.382e49adf7"
+[0m16:51:08.044196 [debug] [Thread-2 (]: On test.tfl_analytics.unique_stg_tube_lines_line_id.382e49adf7: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "node_id": "test.tfl_analytics.unique_stg_tube_lines_line_id.382e49adf7"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    line_id as unique_field,
+    count(*) as n_records
+
+from "tfl"."analytics"."stg_tube_lines"
+where line_id is not null
+group by line_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m16:51:08.044579 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m16:51:08.045221 [debug] [Thread-1 (]: Using postgres connection "test.tfl_analytics.unique_stg_tube_status_snapshots_snapshot_id.a20fae9ab3"
+[0m16:51:08.045691 [debug] [Thread-1 (]: On test.tfl_analytics.unique_stg_tube_status_snapshots_snapshot_id.a20fae9ab3: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "node_id": "test.tfl_analytics.unique_stg_tube_status_snapshots_snapshot_id.a20fae9ab3"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    snapshot_id as unique_field,
+    count(*) as n_records
+
+from "tfl"."analytics"."stg_tube_status_snapshots"
+where snapshot_id is not null
+group by snapshot_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m16:51:08.046102 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:51:08.079538 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.035 seconds
+[0m16:51:08.081337 [debug] [Thread-2 (]: On test.tfl_analytics.unique_stg_tube_lines_line_id.382e49adf7: ROLLBACK
+[0m16:51:08.083403 [debug] [Thread-2 (]: On test.tfl_analytics.unique_stg_tube_lines_line_id.382e49adf7: Close
+[0m16:51:08.085987 [info ] [Thread-2 (]: 5 of 6 PASS unique_stg_tube_lines_line_id ...................................... [[32mPASS[0m in 0.08s]
+[0m16:51:08.088003 [debug] [Thread-2 (]: Finished running node test.tfl_analytics.unique_stg_tube_lines_line_id.382e49adf7
+[0m16:51:08.095559 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.049 seconds
+[0m16:51:08.096941 [debug] [Thread-1 (]: On test.tfl_analytics.unique_stg_tube_status_snapshots_snapshot_id.a20fae9ab3: ROLLBACK
+[0m16:51:08.098317 [debug] [Thread-1 (]: On test.tfl_analytics.unique_stg_tube_status_snapshots_snapshot_id.a20fae9ab3: Close
+[0m16:51:08.099750 [info ] [Thread-1 (]: 6 of 6 PASS unique_stg_tube_status_snapshots_snapshot_id ....................... [[32mPASS[0m in 0.08s]
+[0m16:51:08.101409 [debug] [Thread-1 (]: Finished running node test.tfl_analytics.unique_stg_tube_status_snapshots_snapshot_id.a20fae9ab3
+[0m16:51:08.106852 [debug] [MainThread]: On master: COMMIT
+[0m16:51:08.108326 [debug] [MainThread]: Using postgres connection "master"
+[0m16:51:08.108938 [debug] [MainThread]: On master: COMMIT
+[0m16:51:08.109438 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m16:51:08.129793 [debug] [MainThread]: SQL status: COMMIT in 0.020 seconds
+[0m16:51:08.130349 [debug] [MainThread]: On master: Close
+[0m16:51:08.131192 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:51:08.131777 [debug] [MainThread]: Connection 'list_tfl_analytics' was properly closed.
+[0m16:51:08.132364 [debug] [MainThread]: Connection 'test.tfl_analytics.unique_stg_tube_status_snapshots_snapshot_id.a20fae9ab3' was properly closed.
+[0m16:51:08.132860 [debug] [MainThread]: Connection 'test.tfl_analytics.unique_stg_tube_lines_line_id.382e49adf7' was properly closed.
+[0m16:51:08.133482 [debug] [MainThread]: Connection 'test.tfl_analytics.not_null_stg_tube_status_snapshots_snapshot_id.ab3de7f1e2' was properly closed.
+[0m16:51:08.134073 [debug] [MainThread]: Connection 'test.tfl_analytics.relationships_stg_tube_status_snapshots_line_id__line_id__ref_stg_tube_lines_.5d0544cc75' was properly closed.
+[0m16:51:08.134794 [info ] [MainThread]: 
+[0m16:51:08.136140 [info ] [MainThread]: Finished running 6 data tests in 0 hours 0 minutes and 0.54 seconds (0.54s).
+[0m16:51:08.138263 [debug] [MainThread]: Command end result
+[0m16:51:08.173562 [debug] [MainThread]: Wrote artifact WritableManifest to dbt\target\manifest.json
+[0m16:51:08.177033 [debug] [MainThread]: Wrote artifact SemanticManifest to dbt\target\semantic_manifest.json
+[0m16:51:08.179498 [debug] [MainThread]: Wrote artifact OsiDocument to dbt\target\osi_document.json
+[0m16:51:08.196749 [debug] [MainThread]: Wrote artifact RunExecutionResult to dbt\target\run_results.json
+[0m16:51:08.197173 [info ] [MainThread]: 
+[0m16:51:08.197616 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:51:08.198002 [info ] [MainThread]: 
+[0m16:51:08.198610 [info ] [MainThread]: Done. PASS=6 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=6
+[0m16:51:08.199680 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- EnvironmentVariableNamespaceDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m16:51:08.201849 [debug] [MainThread]: Command `dbt test` succeeded at 16:51:08.201624 after 3.15 seconds
+[0m16:51:08.202362 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0E81CE6D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0E85119F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0E8511BD0>]}
+[0m16:51:08.202910 [debug] [MainThread]: Flushing usage events
+[0m16:51:08.931769 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:52:35.405160 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C794523C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C762ED810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C7BAD3B10>]}
+
+
+============================== 16:52:35.410963 | f541d7cd-65bf-48b2-9941-eef24b782b7b ==============================
+[0m16:52:35.410963 [info ] [MainThread]: Running with dbt=1.12.7
+[0m16:52:35.411825 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt test --project-dir dbt --profiles-dir dbt', 'log_path': 'dbt\\logs'}
+[0m16:52:35.412261 [warn ] [MainThread]: [[33mWARNING[0m][EnvironmentVariableNamespaceDeprecation]: Deprecated
+functionality
+Found custom environment variable `DBT_ENGINE_MANAGE_STATE` in the environment.
+The prefix `DBT_ENGINE` is reserved for dbt engine environment variables. Custom
+environment variables with the prefix `DBT_ENGINE` may cause collisions and
+runtime errors.
+[0m16:52:35.412675 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'f541d7cd-65bf-48b2-9941-eef24b782b7b', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C7BABFA80>]}
+[0m16:52:35.624838 [info ] [MainThread]: State adapter: dbt-state v2.64.0 is disabled
+[0m16:52:35.640758 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f541d7cd-65bf-48b2-9941-eef24b782b7b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C78DD0490>]}
+[0m16:52:35.719196 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f541d7cd-65bf-48b2-9941-eef24b782b7b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C7B92BE50>]}
+[0m16:52:35.720803 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m16:52:35.959763 [debug] [MainThread]: checksum: 3231035334bfc49aa985ad8056e9ca553f6df8558700f2e162d2889609c5a75a, vars: {}, profile: tfl_analytics, target: dev, version: 1.12.7
+[0m16:52:36.201764 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:52:36.202472 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m16:52:36.202821 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:52:36.212755 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f541d7cd-65bf-48b2-9941-eef24b782b7b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C7BCCF6B0>]}
+[0m16:52:36.378612 [debug] [MainThread]: Wrote artifact WritableManifest to dbt\target\manifest.json
+[0m16:52:36.382723 [debug] [MainThread]: Wrote artifact SemanticManifest to dbt\target\semantic_manifest.json
+[0m16:52:36.422899 [debug] [MainThread]: Wrote artifact OsiDocument to dbt\target\osi_document.json
+[0m16:52:36.457504 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f541d7cd-65bf-48b2-9941-eef24b782b7b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C7C35D630>]}
+[0m16:52:36.458366 [info ] [MainThread]: Found 2 models, 6 data tests, 2 sources, 477 macros
+[0m16:52:36.459574 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f541d7cd-65bf-48b2-9941-eef24b782b7b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C7C342340>]}
+[0m16:52:36.462567 [info ] [MainThread]: 
+[0m16:52:36.463519 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m16:52:36.464482 [info ] [MainThread]: 
+[0m16:52:36.466610 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m16:52:36.480661 [debug] [ThreadPool]: Acquiring new postgres connection 'list_tfl_analytics'
+[0m16:52:36.597803 [debug] [ThreadPool]: Using postgres connection "list_tfl_analytics"
+[0m16:52:36.598347 [debug] [ThreadPool]: On list_tfl_analytics: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "connection_name": "list_tfl_analytics"} */
+select
+      'tfl' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'analytics'
+    union all
+    select
+      'tfl' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'analytics'
+    union all
+    select
+      'tfl' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'analytics'
+    union all
+    select distinct
+     'tfl' as database,
+     proname as name,
+     ns.nspname as schema,
+     'function' as type
+    from pg_proc
+     join pg_namespace as ns on pronamespace = ns.oid
+    where ns.nspname ilike 'analytics'
+  
+[0m16:52:36.598722 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:52:36.671842 [debug] [ThreadPool]: SQL status: SELECT 2 in 0.073 seconds
+[0m16:52:36.673421 [debug] [ThreadPool]: On list_tfl_analytics: ROLLBACK
+[0m16:52:36.674935 [debug] [ThreadPool]: On list_tfl_analytics: Close
+[0m16:52:36.680042 [debug] [MainThread]: Using postgres connection "master"
+[0m16:52:36.680464 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m16:52:36.680884 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:52:36.699732 [debug] [MainThread]: SQL status: SELECT 2 in 0.019 seconds
+[0m16:52:36.700931 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f541d7cd-65bf-48b2-9941-eef24b782b7b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C7C103D10>]}
+[0m16:52:36.701476 [debug] [MainThread]: On master: ROLLBACK
+[0m16:52:36.702458 [debug] [MainThread]: On master: COMMIT
+[0m16:52:36.702775 [debug] [MainThread]: Using postgres connection "master"
+[0m16:52:36.703001 [debug] [MainThread]: On master: COMMIT
+[0m16:52:36.704459 [debug] [MainThread]: SQL status: COMMIT in 0.001 seconds
+[0m16:52:36.704776 [debug] [MainThread]: On master: Close
+[0m16:52:36.713339 [debug] [Thread-2 (]: Began running node test.tfl_analytics.not_null_stg_tube_status_snapshots_line_id.e303fc8bba
+[0m16:52:36.713853 [debug] [Thread-1 (]: Began running node test.tfl_analytics.not_null_stg_tube_lines_line_id.4ed00131fb
+[0m16:52:36.714280 [debug] [Thread-3 (]: Began running node test.tfl_analytics.not_null_stg_tube_status_snapshots_snapshot_id.ab3de7f1e2
+[0m16:52:36.714697 [debug] [Thread-4 (]: Began running node test.tfl_analytics.relationships_stg_tube_status_snapshots_line_id__line_id__ref_stg_tube_lines_.5d0544cc75
+[0m16:52:36.715101 [info ] [Thread-2 (]: 2 of 6 START test not_null_stg_tube_status_snapshots_line_id ................... [RUN]
+[0m16:52:36.715635 [info ] [Thread-1 (]: 1 of 6 START test not_null_stg_tube_lines_line_id .............................. [RUN]
+[0m16:52:36.717059 [debug] [Thread-2 (]: Acquiring new postgres connection 'test.tfl_analytics.not_null_stg_tube_status_snapshots_line_id.e303fc8bba'
+[0m16:52:36.716095 [info ] [Thread-3 (]: 3 of 6 START test not_null_stg_tube_status_snapshots_snapshot_id ............... [RUN]
+[0m16:52:36.718004 [debug] [Thread-1 (]: Acquiring new postgres connection 'test.tfl_analytics.not_null_stg_tube_lines_line_id.4ed00131fb'
+[0m16:52:36.716474 [info ] [Thread-4 (]: 4 of 6 START test relationships_stg_tube_status_snapshots_line_id__line_id__ref_stg_tube_lines_  [RUN]
+[0m16:52:36.718748 [debug] [Thread-2 (]: Began compiling node test.tfl_analytics.not_null_stg_tube_status_snapshots_line_id.e303fc8bba
+[0m16:52:36.719281 [debug] [Thread-3 (]: Acquiring new postgres connection 'test.tfl_analytics.not_null_stg_tube_status_snapshots_snapshot_id.ab3de7f1e2'
+[0m16:52:36.719688 [debug] [Thread-1 (]: Began compiling node test.tfl_analytics.not_null_stg_tube_lines_line_id.4ed00131fb
+[0m16:52:36.720199 [debug] [Thread-4 (]: Acquiring new postgres connection 'test.tfl_analytics.relationships_stg_tube_status_snapshots_line_id__line_id__ref_stg_tube_lines_.5d0544cc75'
+[0m16:52:36.741974 [debug] [Thread-2 (]: Writing injected SQL for node "test.tfl_analytics.not_null_stg_tube_status_snapshots_line_id.e303fc8bba"
+[0m16:52:36.742646 [debug] [Thread-3 (]: Began compiling node test.tfl_analytics.not_null_stg_tube_status_snapshots_snapshot_id.ab3de7f1e2
+[0m16:52:36.747729 [debug] [Thread-1 (]: Writing injected SQL for node "test.tfl_analytics.not_null_stg_tube_lines_line_id.4ed00131fb"
+[0m16:52:36.748197 [debug] [Thread-4 (]: Began compiling node test.tfl_analytics.relationships_stg_tube_status_snapshots_line_id__line_id__ref_stg_tube_lines_.5d0544cc75
+[0m16:52:36.754168 [debug] [Thread-3 (]: Writing injected SQL for node "test.tfl_analytics.not_null_stg_tube_status_snapshots_snapshot_id.ab3de7f1e2"
+[0m16:52:36.768554 [debug] [Thread-4 (]: Writing injected SQL for node "test.tfl_analytics.relationships_stg_tube_status_snapshots_line_id__line_id__ref_stg_tube_lines_.5d0544cc75"
+[0m16:52:36.769845 [debug] [Thread-2 (]: Began executing node test.tfl_analytics.not_null_stg_tube_status_snapshots_line_id.e303fc8bba
+[0m16:52:36.770805 [debug] [Thread-3 (]: Began executing node test.tfl_analytics.not_null_stg_tube_status_snapshots_snapshot_id.ab3de7f1e2
+[0m16:52:36.783029 [debug] [Thread-1 (]: Began executing node test.tfl_analytics.not_null_stg_tube_lines_line_id.4ed00131fb
+[0m16:52:36.790333 [debug] [Thread-3 (]: Writing runtime sql for node "test.tfl_analytics.not_null_stg_tube_status_snapshots_snapshot_id.ab3de7f1e2"
+[0m16:52:36.792419 [debug] [Thread-2 (]: Writing runtime sql for node "test.tfl_analytics.not_null_stg_tube_status_snapshots_line_id.e303fc8bba"
+[0m16:52:36.794323 [debug] [Thread-1 (]: Writing runtime sql for node "test.tfl_analytics.not_null_stg_tube_lines_line_id.4ed00131fb"
+[0m16:52:36.794991 [debug] [Thread-4 (]: Began executing node test.tfl_analytics.relationships_stg_tube_status_snapshots_line_id__line_id__ref_stg_tube_lines_.5d0544cc75
+[0m16:52:36.797765 [debug] [Thread-4 (]: Writing runtime sql for node "test.tfl_analytics.relationships_stg_tube_status_snapshots_line_id__line_id__ref_stg_tube_lines_.5d0544cc75"
+[0m16:52:36.798889 [debug] [Thread-3 (]: Using postgres connection "test.tfl_analytics.not_null_stg_tube_status_snapshots_snapshot_id.ab3de7f1e2"
+[0m16:52:36.799502 [debug] [Thread-3 (]: On test.tfl_analytics.not_null_stg_tube_status_snapshots_snapshot_id.ab3de7f1e2: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "node_id": "test.tfl_analytics.not_null_stg_tube_status_snapshots_snapshot_id.ab3de7f1e2"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select snapshot_id
+from "tfl"."analytics"."stg_tube_status_snapshots"
+where snapshot_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m16:52:36.799915 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m16:52:36.800551 [debug] [Thread-2 (]: Using postgres connection "test.tfl_analytics.not_null_stg_tube_status_snapshots_line_id.e303fc8bba"
+[0m16:52:36.801139 [debug] [Thread-2 (]: On test.tfl_analytics.not_null_stg_tube_status_snapshots_line_id.e303fc8bba: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "node_id": "test.tfl_analytics.not_null_stg_tube_status_snapshots_line_id.e303fc8bba"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select line_id
+from "tfl"."analytics"."stg_tube_status_snapshots"
+where line_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m16:52:36.802314 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m16:52:36.803324 [debug] [Thread-1 (]: Using postgres connection "test.tfl_analytics.not_null_stg_tube_lines_line_id.4ed00131fb"
+[0m16:52:36.804762 [debug] [Thread-4 (]: Using postgres connection "test.tfl_analytics.relationships_stg_tube_status_snapshots_line_id__line_id__ref_stg_tube_lines_.5d0544cc75"
+[0m16:52:36.805596 [debug] [Thread-1 (]: On test.tfl_analytics.not_null_stg_tube_lines_line_id.4ed00131fb: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "node_id": "test.tfl_analytics.not_null_stg_tube_lines_line_id.4ed00131fb"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select line_id
+from "tfl"."analytics"."stg_tube_lines"
+where line_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m16:52:36.806300 [debug] [Thread-4 (]: On test.tfl_analytics.relationships_stg_tube_status_snapshots_line_id__line_id__ref_stg_tube_lines_.5d0544cc75: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "node_id": "test.tfl_analytics.relationships_stg_tube_status_snapshots_line_id__line_id__ref_stg_tube_lines_.5d0544cc75"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select line_id as from_field
+    from "tfl"."analytics"."stg_tube_status_snapshots"
+    where line_id is not null
+),
+
+parent as (
+    select line_id as to_field
+    from "tfl"."analytics"."stg_tube_lines"
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m16:52:36.806795 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m16:52:36.807229 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m16:52:36.826345 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.026 seconds
+[0m16:52:36.835979 [debug] [Thread-3 (]: On test.tfl_analytics.not_null_stg_tube_status_snapshots_snapshot_id.ab3de7f1e2: ROLLBACK
+[0m16:52:36.837825 [debug] [Thread-3 (]: On test.tfl_analytics.not_null_stg_tube_status_snapshots_snapshot_id.ab3de7f1e2: Close
+[0m16:52:36.839263 [info ] [Thread-3 (]: 3 of 6 PASS not_null_stg_tube_status_snapshots_snapshot_id ..................... [[32mPASS[0m in 0.12s]
+[0m16:52:36.840935 [debug] [Thread-3 (]: Finished running node test.tfl_analytics.not_null_stg_tube_status_snapshots_snapshot_id.ab3de7f1e2
+[0m16:52:36.841950 [debug] [Thread-3 (]: Began running node test.tfl_analytics.unique_stg_tube_lines_line_id.382e49adf7
+[0m16:52:36.843085 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.041 seconds
+[0m16:52:36.844677 [debug] [Thread-2 (]: On test.tfl_analytics.not_null_stg_tube_status_snapshots_line_id.e303fc8bba: ROLLBACK
+[0m16:52:36.845136 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.038 seconds
+[0m16:52:36.846770 [debug] [Thread-1 (]: On test.tfl_analytics.not_null_stg_tube_lines_line_id.4ed00131fb: ROLLBACK
+[0m16:52:36.842458 [info ] [Thread-3 (]: 5 of 6 START test unique_stg_tube_lines_line_id ................................ [RUN]
+[0m16:52:36.847591 [debug] [Thread-2 (]: On test.tfl_analytics.not_null_stg_tube_status_snapshots_line_id.e303fc8bba: Close
+[0m16:52:36.848328 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.tfl_analytics.not_null_stg_tube_status_snapshots_snapshot_id.ab3de7f1e2, now test.tfl_analytics.unique_stg_tube_lines_line_id.382e49adf7)
+[0m16:52:36.850514 [debug] [Thread-3 (]: Began compiling node test.tfl_analytics.unique_stg_tube_lines_line_id.382e49adf7
+[0m16:52:36.849690 [info ] [Thread-2 (]: 2 of 6 PASS not_null_stg_tube_status_snapshots_line_id ......................... [[32mPASS[0m in 0.13s]
+[0m16:52:36.851659 [debug] [Thread-1 (]: On test.tfl_analytics.not_null_stg_tube_lines_line_id.4ed00131fb: Close
+[0m16:52:36.860726 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.053 seconds
+[0m16:52:36.864825 [debug] [Thread-3 (]: Writing injected SQL for node "test.tfl_analytics.unique_stg_tube_lines_line_id.382e49adf7"
+[0m16:52:36.865994 [debug] [Thread-2 (]: Finished running node test.tfl_analytics.not_null_stg_tube_status_snapshots_line_id.e303fc8bba
+[0m16:52:36.869385 [debug] [Thread-4 (]: On test.tfl_analytics.relationships_stg_tube_status_snapshots_line_id__line_id__ref_stg_tube_lines_.5d0544cc75: ROLLBACK
+[0m16:52:36.872478 [debug] [Thread-2 (]: Began running node test.tfl_analytics.unique_stg_tube_status_snapshots_snapshot_id.a20fae9ab3
+[0m16:52:36.870925 [info ] [Thread-1 (]: 1 of 6 PASS not_null_stg_tube_lines_line_id .................................... [[32mPASS[0m in 0.15s]
+[0m16:52:36.876307 [debug] [Thread-1 (]: Finished running node test.tfl_analytics.not_null_stg_tube_lines_line_id.4ed00131fb
+[0m16:52:36.874688 [info ] [Thread-2 (]: 6 of 6 START test unique_stg_tube_status_snapshots_snapshot_id ................. [RUN]
+[0m16:52:36.878126 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.tfl_analytics.not_null_stg_tube_status_snapshots_line_id.e303fc8bba, now test.tfl_analytics.unique_stg_tube_status_snapshots_snapshot_id.a20fae9ab3)
+[0m16:52:36.878906 [debug] [Thread-2 (]: Began compiling node test.tfl_analytics.unique_stg_tube_status_snapshots_snapshot_id.a20fae9ab3
+[0m16:52:36.879777 [debug] [Thread-3 (]: Began executing node test.tfl_analytics.unique_stg_tube_lines_line_id.382e49adf7
+[0m16:52:36.880795 [debug] [Thread-4 (]: On test.tfl_analytics.relationships_stg_tube_status_snapshots_line_id__line_id__ref_stg_tube_lines_.5d0544cc75: Close
+[0m16:52:36.892283 [debug] [Thread-2 (]: Writing injected SQL for node "test.tfl_analytics.unique_stg_tube_status_snapshots_snapshot_id.a20fae9ab3"
+[0m16:52:36.894821 [debug] [Thread-3 (]: Writing runtime sql for node "test.tfl_analytics.unique_stg_tube_lines_line_id.382e49adf7"
+[0m16:52:36.896657 [info ] [Thread-4 (]: 4 of 6 PASS relationships_stg_tube_status_snapshots_line_id__line_id__ref_stg_tube_lines_  [[32mPASS[0m in 0.18s]
+[0m16:52:36.898357 [debug] [Thread-4 (]: Finished running node test.tfl_analytics.relationships_stg_tube_status_snapshots_line_id__line_id__ref_stg_tube_lines_.5d0544cc75
+[0m16:52:36.899742 [debug] [Thread-3 (]: Using postgres connection "test.tfl_analytics.unique_stg_tube_lines_line_id.382e49adf7"
+[0m16:52:36.900367 [debug] [Thread-2 (]: Began executing node test.tfl_analytics.unique_stg_tube_status_snapshots_snapshot_id.a20fae9ab3
+[0m16:52:36.900860 [debug] [Thread-3 (]: On test.tfl_analytics.unique_stg_tube_lines_line_id.382e49adf7: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "node_id": "test.tfl_analytics.unique_stg_tube_lines_line_id.382e49adf7"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    line_id as unique_field,
+    count(*) as n_records
+
+from "tfl"."analytics"."stg_tube_lines"
+where line_id is not null
+group by line_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m16:52:36.903167 [debug] [Thread-2 (]: Writing runtime sql for node "test.tfl_analytics.unique_stg_tube_status_snapshots_snapshot_id.a20fae9ab3"
+[0m16:52:36.903754 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m16:52:36.905966 [debug] [Thread-2 (]: Using postgres connection "test.tfl_analytics.unique_stg_tube_status_snapshots_snapshot_id.a20fae9ab3"
+[0m16:52:36.906700 [debug] [Thread-2 (]: On test.tfl_analytics.unique_stg_tube_status_snapshots_snapshot_id.a20fae9ab3: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "node_id": "test.tfl_analytics.unique_stg_tube_status_snapshots_snapshot_id.a20fae9ab3"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    snapshot_id as unique_field,
+    count(*) as n_records
+
+from "tfl"."analytics"."stg_tube_status_snapshots"
+where snapshot_id is not null
+group by snapshot_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m16:52:36.908043 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m16:52:36.933756 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.030 seconds
+[0m16:52:36.936924 [debug] [Thread-3 (]: On test.tfl_analytics.unique_stg_tube_lines_line_id.382e49adf7: ROLLBACK
+[0m16:52:36.940115 [debug] [Thread-3 (]: On test.tfl_analytics.unique_stg_tube_lines_line_id.382e49adf7: Close
+[0m16:52:36.943040 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.035 seconds
+[0m16:52:36.942426 [info ] [Thread-3 (]: 5 of 6 PASS unique_stg_tube_lines_line_id ...................................... [[32mPASS[0m in 0.09s]
+[0m16:52:36.945615 [debug] [Thread-2 (]: On test.tfl_analytics.unique_stg_tube_status_snapshots_snapshot_id.a20fae9ab3: ROLLBACK
+[0m16:52:36.946597 [debug] [Thread-3 (]: Finished running node test.tfl_analytics.unique_stg_tube_lines_line_id.382e49adf7
+[0m16:52:36.948213 [debug] [Thread-2 (]: On test.tfl_analytics.unique_stg_tube_status_snapshots_snapshot_id.a20fae9ab3: Close
+[0m16:52:36.949236 [info ] [Thread-2 (]: 6 of 6 PASS unique_stg_tube_status_snapshots_snapshot_id ....................... [[32mPASS[0m in 0.07s]
+[0m16:52:36.951334 [debug] [Thread-2 (]: Finished running node test.tfl_analytics.unique_stg_tube_status_snapshots_snapshot_id.a20fae9ab3
+[0m16:52:36.956103 [debug] [MainThread]: On master: COMMIT
+[0m16:52:36.957324 [debug] [MainThread]: Using postgres connection "master"
+[0m16:52:36.958349 [debug] [MainThread]: On master: COMMIT
+[0m16:52:36.959233 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m16:52:36.995324 [debug] [MainThread]: SQL status: COMMIT in 0.036 seconds
+[0m16:52:36.995983 [debug] [MainThread]: On master: Close
+[0m16:52:36.996646 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:52:36.997063 [debug] [MainThread]: Connection 'list_tfl_analytics' was properly closed.
+[0m16:52:36.997473 [debug] [MainThread]: Connection 'test.tfl_analytics.unique_stg_tube_status_snapshots_snapshot_id.a20fae9ab3' was properly closed.
+[0m16:52:36.997745 [debug] [MainThread]: Connection 'test.tfl_analytics.not_null_stg_tube_lines_line_id.4ed00131fb' was properly closed.
+[0m16:52:36.997994 [debug] [MainThread]: Connection 'test.tfl_analytics.unique_stg_tube_lines_line_id.382e49adf7' was properly closed.
+[0m16:52:36.998238 [debug] [MainThread]: Connection 'test.tfl_analytics.relationships_stg_tube_status_snapshots_line_id__line_id__ref_stg_tube_lines_.5d0544cc75' was properly closed.
+[0m16:52:37.032423 [info ] [MainThread]: 
+[0m16:52:37.033483 [info ] [MainThread]: Finished running 6 data tests in 0 hours 0 minutes and 0.53 seconds (0.53s).
+[0m16:52:37.035734 [debug] [MainThread]: Command end result
+[0m16:52:37.067887 [debug] [MainThread]: Wrote artifact WritableManifest to dbt\target\manifest.json
+[0m16:52:37.070438 [debug] [MainThread]: Wrote artifact SemanticManifest to dbt\target\semantic_manifest.json
+[0m16:52:37.073530 [debug] [MainThread]: Wrote artifact OsiDocument to dbt\target\osi_document.json
+[0m16:52:37.104404 [debug] [MainThread]: Wrote artifact RunExecutionResult to dbt\target\run_results.json
+[0m16:52:37.104909 [info ] [MainThread]: 
+[0m16:52:37.105535 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:52:37.105985 [info ] [MainThread]: 
+[0m16:52:37.106506 [info ] [MainThread]: Done. PASS=6 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=6
+[0m16:52:37.107719 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- EnvironmentVariableNamespaceDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m16:52:37.144976 [debug] [MainThread]: Command `dbt test` succeeded at 16:52:37.144454 after 1.98 seconds
+[0m16:52:37.146666 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C7C2F3280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C7C6BBE30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C7C6BBA70>]}
+[0m16:52:37.147714 [debug] [MainThread]: Flushing usage events
+[0m16:52:38.044447 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:14:48.934567 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A0B38723C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A0B070D810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A0B5EF7B10>]}
+
+
+============================== 17:14:48.946367 | 001dfb3f-3bc2-488b-a04c-a51441d52f42 ==============================
+[0m17:14:48.946367 [info ] [MainThread]: Running with dbt=1.12.7
+[0m17:14:48.947667 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt run --project-dir dbt --profiles-dir dbt', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'dbt\\logs'}
+[0m17:14:48.948472 [warn ] [MainThread]: [[33mWARNING[0m][EnvironmentVariableNamespaceDeprecation]: Deprecated
+functionality
+Found custom environment variable `DBT_ENGINE_MANAGE_STATE` in the environment.
+The prefix `DBT_ENGINE` is reserved for dbt engine environment variables. Custom
+environment variables with the prefix `DBT_ENGINE` may cause collisions and
+runtime errors.
+[0m17:14:48.949583 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '001dfb3f-3bc2-488b-a04c-a51441d52f42', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A0B5EE3A80>]}
+[0m17:14:49.655541 [info ] [MainThread]: State adapter: dbt-state v2.64.0 is disabled
+[0m17:14:49.717077 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '001dfb3f-3bc2-488b-a04c-a51441d52f42', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A0B31F4490>]}
+[0m17:14:49.907969 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '001dfb3f-3bc2-488b-a04c-a51441d52f42', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A0B5D4BE50>]}
+[0m17:14:49.912395 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m17:14:51.916707 [debug] [MainThread]: checksum: 3231035334bfc49aa985ad8056e9ca553f6df8558700f2e162d2889609c5a75a, vars: {}, profile: tfl_analytics, target: dev, version: 1.12.7
+[0m17:14:52.969197 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m17:14:52.970862 [debug] [MainThread]: Partial parsing: added file: tfl_analytics://models\mart_line_reliability.sql
+[0m17:14:55.029890 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '001dfb3f-3bc2-488b-a04c-a51441d52f42', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A0B616BA70>]}
+[0m17:14:55.527338 [debug] [MainThread]: Wrote artifact WritableManifest to dbt\target\manifest.json
+[0m17:14:55.550336 [debug] [MainThread]: Wrote artifact SemanticManifest to dbt\target\semantic_manifest.json
+[0m17:14:55.733351 [debug] [MainThread]: Wrote artifact OsiDocument to dbt\target\osi_document.json
+[0m17:14:55.810013 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '001dfb3f-3bc2-488b-a04c-a51441d52f42', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A0B68610F0>]}
+[0m17:14:55.811471 [info ] [MainThread]: Found 3 models, 6 data tests, 2 sources, 477 macros
+[0m17:14:55.812943 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '001dfb3f-3bc2-488b-a04c-a51441d52f42', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A0B5EBA000>]}
+[0m17:14:55.821437 [info ] [MainThread]: 
+[0m17:14:55.823264 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m17:14:55.824480 [info ] [MainThread]: 
+[0m17:14:55.826674 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m17:14:55.846677 [debug] [ThreadPool]: Acquiring new postgres connection 'list_tfl'
+[0m17:14:56.625877 [debug] [ThreadPool]: Using postgres connection "list_tfl"
+[0m17:14:56.627029 [debug] [ThreadPool]: On list_tfl: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "connection_name": "list_tfl"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m17:14:56.628421 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:14:57.049581 [debug] [ThreadPool]: SQL status: SELECT 5 in 0.421 seconds
+[0m17:14:57.053800 [debug] [ThreadPool]: On list_tfl: Close
+[0m17:14:57.059991 [debug] [ThreadPool]: Acquiring new postgres connection 'list_tfl_analytics'
+[0m17:14:57.076951 [debug] [ThreadPool]: Using postgres connection "list_tfl_analytics"
+[0m17:14:57.078280 [debug] [ThreadPool]: On list_tfl_analytics: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "connection_name": "list_tfl_analytics"} */
+select
+      'tfl' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'analytics'
+    union all
+    select
+      'tfl' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'analytics'
+    union all
+    select
+      'tfl' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'analytics'
+    union all
+    select distinct
+     'tfl' as database,
+     proname as name,
+     ns.nspname as schema,
+     'function' as type
+    from pg_proc
+     join pg_namespace as ns on pronamespace = ns.oid
+    where ns.nspname ilike 'analytics'
+  
+[0m17:14:57.079889 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:14:57.246934 [debug] [ThreadPool]: SQL status: SELECT 2 in 0.167 seconds
+[0m17:14:57.250831 [debug] [ThreadPool]: On list_tfl_analytics: ROLLBACK
+[0m17:14:57.253786 [debug] [ThreadPool]: On list_tfl_analytics: Close
+[0m17:14:57.265169 [debug] [MainThread]: Using postgres connection "master"
+[0m17:14:57.266596 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m17:14:57.267907 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:14:57.377716 [debug] [MainThread]: SQL status: SELECT 2 in 0.110 seconds
+[0m17:14:57.381123 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '001dfb3f-3bc2-488b-a04c-a51441d52f42', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A0B68DEF90>]}
+[0m17:14:57.382582 [debug] [MainThread]: On master: ROLLBACK
+[0m17:14:57.386035 [debug] [MainThread]: On master: COMMIT
+[0m17:14:57.387243 [debug] [MainThread]: Using postgres connection "master"
+[0m17:14:57.388371 [debug] [MainThread]: On master: COMMIT
+[0m17:14:57.393493 [debug] [MainThread]: SQL status: COMMIT in 0.004 seconds
+[0m17:14:57.394679 [debug] [MainThread]: On master: Close
+[0m17:14:57.423576 [debug] [Thread-1 (]: Began running node model.tfl_analytics.stg_tube_lines
+[0m17:14:57.425400 [debug] [Thread-2 (]: Began running node model.tfl_analytics.stg_tube_status_snapshots
+[0m17:14:57.427261 [info ] [Thread-1 (]: 1 of 3 START sql view model analytics.stg_tube_lines ........................... [RUN]
+[0m17:14:57.434077 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.tfl_analytics.stg_tube_lines'
+[0m17:14:57.430215 [info ] [Thread-2 (]: 2 of 3 START sql view model analytics.stg_tube_status_snapshots ................ [RUN]
+[0m17:14:57.435985 [debug] [Thread-1 (]: Began compiling node model.tfl_analytics.stg_tube_lines
+[0m17:14:57.438243 [debug] [Thread-2 (]: Acquiring new postgres connection 'model.tfl_analytics.stg_tube_status_snapshots'
+[0m17:14:57.458360 [debug] [Thread-1 (]: Writing injected SQL for node "model.tfl_analytics.stg_tube_lines"
+[0m17:14:57.459932 [debug] [Thread-2 (]: Began compiling node model.tfl_analytics.stg_tube_status_snapshots
+[0m17:14:57.466901 [debug] [Thread-2 (]: Writing injected SQL for node "model.tfl_analytics.stg_tube_status_snapshots"
+[0m17:14:57.471440 [debug] [Thread-1 (]: Began executing node model.tfl_analytics.stg_tube_lines
+[0m17:14:57.549964 [debug] [Thread-2 (]: Began executing node model.tfl_analytics.stg_tube_status_snapshots
+[0m17:14:57.615164 [debug] [Thread-2 (]: Writing runtime sql for node "model.tfl_analytics.stg_tube_status_snapshots"
+[0m17:14:57.621132 [debug] [Thread-1 (]: Writing runtime sql for node "model.tfl_analytics.stg_tube_lines"
+[0m17:14:57.625721 [debug] [Thread-1 (]: Using postgres connection "model.tfl_analytics.stg_tube_lines"
+[0m17:14:57.627293 [debug] [Thread-2 (]: Using postgres connection "model.tfl_analytics.stg_tube_status_snapshots"
+[0m17:14:57.628589 [debug] [Thread-1 (]: On model.tfl_analytics.stg_tube_lines: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "node_id": "model.tfl_analytics.stg_tube_lines"} */
+
+  create view "tfl"."analytics"."stg_tube_lines__dbt_tmp"
+    
+    
+  as (
+    select line_id, line_name, ingested_at from "tfl"."public"."tube_lines"
+  );
+[0m17:14:57.629983 [debug] [Thread-2 (]: On model.tfl_analytics.stg_tube_status_snapshots: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "node_id": "model.tfl_analytics.stg_tube_status_snapshots"} */
+
+  create view "tfl"."analytics"."stg_tube_status_snapshots__dbt_tmp"
+    
+    
+  as (
+    select snapshot_id, line_id, observed_at, status_severity, status_description
+from "tfl"."public"."tube_status_snapshots"
+  );
+[0m17:14:57.631353 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:14:57.632714 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m17:14:57.790081 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.158 seconds
+[0m17:14:57.807931 [debug] [Thread-1 (]: Using postgres connection "model.tfl_analytics.stg_tube_lines"
+[0m17:14:57.809790 [debug] [Thread-2 (]: SQL status: CREATE VIEW in 0.177 seconds
+[0m17:14:57.811281 [debug] [Thread-1 (]: On model.tfl_analytics.stg_tube_lines: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "node_id": "model.tfl_analytics.stg_tube_lines"} */
+alter table "tfl"."analytics"."stg_tube_lines" rename to "stg_tube_lines__dbt_backup"
+[0m17:14:57.820000 [debug] [Thread-2 (]: Using postgres connection "model.tfl_analytics.stg_tube_status_snapshots"
+[0m17:14:57.821851 [debug] [Thread-2 (]: On model.tfl_analytics.stg_tube_status_snapshots: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "node_id": "model.tfl_analytics.stg_tube_status_snapshots"} */
+alter table "tfl"."analytics"."stg_tube_status_snapshots" rename to "stg_tube_status_snapshots__dbt_backup"
+[0m17:14:57.829933 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.007 seconds
+[0m17:14:57.831388 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.010 seconds
+[0m17:14:57.842282 [debug] [Thread-2 (]: Using postgres connection "model.tfl_analytics.stg_tube_status_snapshots"
+[0m17:14:57.850081 [debug] [Thread-1 (]: Using postgres connection "model.tfl_analytics.stg_tube_lines"
+[0m17:14:57.851724 [debug] [Thread-2 (]: On model.tfl_analytics.stg_tube_status_snapshots: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "node_id": "model.tfl_analytics.stg_tube_status_snapshots"} */
+alter table "tfl"."analytics"."stg_tube_status_snapshots__dbt_tmp" rename to "stg_tube_status_snapshots"
+[0m17:14:57.853239 [debug] [Thread-1 (]: On model.tfl_analytics.stg_tube_lines: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "node_id": "model.tfl_analytics.stg_tube_lines"} */
+alter table "tfl"."analytics"."stg_tube_lines__dbt_tmp" rename to "stg_tube_lines"
+[0m17:14:57.859959 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.005 seconds
+[0m17:14:57.861440 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.006 seconds
+[0m17:14:58.033516 [debug] [Thread-1 (]: On model.tfl_analytics.stg_tube_lines: COMMIT
+[0m17:14:58.049937 [debug] [Thread-1 (]: Using postgres connection "model.tfl_analytics.stg_tube_lines"
+[0m17:14:58.060291 [debug] [Thread-2 (]: On model.tfl_analytics.stg_tube_status_snapshots: COMMIT
+[0m17:14:58.063230 [debug] [Thread-1 (]: On model.tfl_analytics.stg_tube_lines: COMMIT
+[0m17:14:58.065580 [debug] [Thread-2 (]: Using postgres connection "model.tfl_analytics.stg_tube_status_snapshots"
+[0m17:14:58.073678 [debug] [Thread-2 (]: On model.tfl_analytics.stg_tube_status_snapshots: COMMIT
+[0m17:14:58.118177 [debug] [Thread-1 (]: SQL status: COMMIT in 0.045 seconds
+[0m17:14:58.137134 [debug] [Thread-1 (]: Applying DROP to: "tfl"."analytics"."stg_tube_lines__dbt_backup"
+[0m17:14:58.149812 [debug] [Thread-2 (]: SQL status: COMMIT in 0.074 seconds
+[0m17:14:58.170685 [debug] [Thread-2 (]: Applying DROP to: "tfl"."analytics"."stg_tube_status_snapshots__dbt_backup"
+[0m17:14:58.186204 [debug] [Thread-2 (]: Using postgres connection "model.tfl_analytics.stg_tube_status_snapshots"
+[0m17:14:58.188050 [debug] [Thread-2 (]: On model.tfl_analytics.stg_tube_status_snapshots: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "node_id": "model.tfl_analytics.stg_tube_status_snapshots"} */
+drop view if exists "tfl"."analytics"."stg_tube_status_snapshots__dbt_backup" cascade
+[0m17:14:58.191914 [debug] [Thread-1 (]: Using postgres connection "model.tfl_analytics.stg_tube_lines"
+[0m17:14:58.195304 [debug] [Thread-1 (]: On model.tfl_analytics.stg_tube_lines: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "node_id": "model.tfl_analytics.stg_tube_lines"} */
+drop view if exists "tfl"."analytics"."stg_tube_lines__dbt_backup" cascade
+[0m17:14:58.360096 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.163 seconds
+[0m17:14:58.376732 [debug] [Thread-1 (]: On model.tfl_analytics.stg_tube_lines: Close
+[0m17:14:58.389627 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '001dfb3f-3bc2-488b-a04c-a51441d52f42', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A0B6851D30>]}
+[0m17:14:58.427382 [debug] [Thread-2 (]: SQL status: DROP VIEW in 0.234 seconds
+[0m17:14:58.422129 [info ] [Thread-1 (]: 1 of 3 OK created sql view model analytics.stg_tube_lines ...................... [[32mCREATE VIEW[0m in 0.95s]
+[0m17:14:58.435994 [debug] [Thread-2 (]: On model.tfl_analytics.stg_tube_status_snapshots: Close
+[0m17:14:58.438812 [debug] [Thread-1 (]: Finished running node model.tfl_analytics.stg_tube_lines
+[0m17:14:58.441972 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '001dfb3f-3bc2-488b-a04c-a51441d52f42', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A0B6C42710>]}
+[0m17:14:58.445339 [info ] [Thread-2 (]: 2 of 3 OK created sql view model analytics.stg_tube_status_snapshots ........... [[32mCREATE VIEW[0m in 1.00s]
+[0m17:14:58.449509 [debug] [Thread-2 (]: Finished running node model.tfl_analytics.stg_tube_status_snapshots
+[0m17:14:58.455760 [debug] [Thread-3 (]: Began running node model.tfl_analytics.mart_line_reliability
+[0m17:14:58.458122 [info ] [Thread-3 (]: 3 of 3 START sql view model analytics.mart_line_reliability .................... [RUN]
+[0m17:14:58.461698 [debug] [Thread-3 (]: Acquiring new postgres connection 'model.tfl_analytics.mart_line_reliability'
+[0m17:14:58.463676 [debug] [Thread-3 (]: Began compiling node model.tfl_analytics.mart_line_reliability
+[0m17:14:58.471205 [debug] [Thread-3 (]: Writing injected SQL for node "model.tfl_analytics.mart_line_reliability"
+[0m17:14:58.477896 [debug] [Thread-3 (]: Began executing node model.tfl_analytics.mart_line_reliability
+[0m17:14:58.490876 [debug] [Thread-3 (]: Writing runtime sql for node "model.tfl_analytics.mart_line_reliability"
+[0m17:14:58.499320 [debug] [Thread-3 (]: Using postgres connection "model.tfl_analytics.mart_line_reliability"
+[0m17:14:58.503828 [debug] [Thread-3 (]: On model.tfl_analytics.mart_line_reliability: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "node_id": "model.tfl_analytics.mart_line_reliability"} */
+
+  create view "tfl"."analytics"."mart_line_reliability__dbt_tmp"
+    
+    
+  as (
+    with lines as (
+    select * from "tfl"."analytics"."stg_tube_lines"
+),
+statuses as (
+    select * from "tfl"."analytics"."stg_tube_status_snapshots"
+)
+select lines.line_id,
+lines.line_name,
+count(statuses.snapshot_id) as total_observations,
+
+sum(
+    case when
+    statuses.status_severity = 10 then 1
+    else 0
+    end
+) as good_service_observations,
+
+sum(
+    case when
+    statuses.status_severity <> 10 then 1
+    else 0
+    end
+) as disrupted_observations,
+
+round(
+    100.0
+    * sum(
+        case when
+        statuses.status_severity = 10 then 1
+        else 0
+        end
+    )
+    / nullif(count(statuses.snapshot_id),0),
+    2
+) as reliability_percentage
+
+from lines left join statuses on lines.line_id = statuses.line_id
+group by lines.line_id, lines.line_name
+  );
+[0m17:14:58.508440 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m17:14:59.445051 [debug] [Thread-3 (]: SQL status: CREATE VIEW in 0.938 seconds
+[0m17:14:59.454282 [debug] [Thread-3 (]: Using postgres connection "model.tfl_analytics.mart_line_reliability"
+[0m17:14:59.455806 [debug] [Thread-3 (]: On model.tfl_analytics.mart_line_reliability: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "node_id": "model.tfl_analytics.mart_line_reliability"} */
+alter table "tfl"."analytics"."mart_line_reliability__dbt_tmp" rename to "mart_line_reliability"
+[0m17:14:59.462130 [debug] [Thread-3 (]: SQL status: ALTER TABLE in 0.005 seconds
+[0m17:14:59.468869 [debug] [Thread-3 (]: On model.tfl_analytics.mart_line_reliability: COMMIT
+[0m17:14:59.470755 [debug] [Thread-3 (]: Using postgres connection "model.tfl_analytics.mart_line_reliability"
+[0m17:14:59.472270 [debug] [Thread-3 (]: On model.tfl_analytics.mart_line_reliability: COMMIT
+[0m17:14:59.488160 [debug] [Thread-3 (]: SQL status: COMMIT in 0.014 seconds
+[0m17:14:59.493915 [debug] [Thread-3 (]: Applying DROP to: "tfl"."analytics"."mart_line_reliability__dbt_backup"
+[0m17:14:59.496940 [debug] [Thread-3 (]: Using postgres connection "model.tfl_analytics.mart_line_reliability"
+[0m17:14:59.499127 [debug] [Thread-3 (]: On model.tfl_analytics.mart_line_reliability: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "node_id": "model.tfl_analytics.mart_line_reliability"} */
+drop view if exists "tfl"."analytics"."mart_line_reliability__dbt_backup" cascade
+[0m17:14:59.508616 [debug] [Thread-3 (]: SQL status: DROP VIEW in 0.007 seconds
+[0m17:14:59.513689 [debug] [Thread-3 (]: On model.tfl_analytics.mart_line_reliability: Close
+[0m17:14:59.516588 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '001dfb3f-3bc2-488b-a04c-a51441d52f42', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A0B6B59FD0>]}
+[0m17:14:59.519244 [info ] [Thread-3 (]: 3 of 3 OK created sql view model analytics.mart_line_reliability ............... [[32mCREATE VIEW[0m in 1.06s]
+[0m17:14:59.522257 [debug] [Thread-3 (]: Finished running node model.tfl_analytics.mart_line_reliability
+[0m17:14:59.529358 [debug] [MainThread]: On master: COMMIT
+[0m17:14:59.531022 [debug] [MainThread]: Using postgres connection "master"
+[0m17:14:59.533000 [debug] [MainThread]: On master: COMMIT
+[0m17:14:59.534841 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m17:14:59.666266 [debug] [MainThread]: SQL status: COMMIT in 0.131 seconds
+[0m17:14:59.668091 [debug] [MainThread]: On master: Close
+[0m17:14:59.670402 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:14:59.671703 [debug] [MainThread]: Connection 'list_tfl' was properly closed.
+[0m17:14:59.672864 [debug] [MainThread]: Connection 'list_tfl_analytics' was properly closed.
+[0m17:14:59.674420 [debug] [MainThread]: Connection 'model.tfl_analytics.stg_tube_lines' was properly closed.
+[0m17:14:59.676209 [debug] [MainThread]: Connection 'model.tfl_analytics.stg_tube_status_snapshots' was properly closed.
+[0m17:14:59.678270 [debug] [MainThread]: Connection 'model.tfl_analytics.mart_line_reliability' was properly closed.
+[0m17:14:59.680375 [info ] [MainThread]: 
+[0m17:14:59.684721 [info ] [MainThread]: Finished running 3 view models in 0 hours 0 minutes and 3.85 seconds (3.85s).
+[0m17:14:59.692003 [debug] [MainThread]: Command end result
+[0m17:14:59.902453 [debug] [MainThread]: Wrote artifact WritableManifest to dbt\target\manifest.json
+[0m17:14:59.925531 [debug] [MainThread]: Wrote artifact SemanticManifest to dbt\target\semantic_manifest.json
+[0m17:14:59.941771 [debug] [MainThread]: Wrote artifact OsiDocument to dbt\target\osi_document.json
+[0m17:15:00.002030 [debug] [MainThread]: Wrote artifact RunExecutionResult to dbt\target\run_results.json
+[0m17:15:00.003761 [info ] [MainThread]: 
+[0m17:15:00.008053 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:15:00.015635 [info ] [MainThread]: 
+[0m17:15:00.027389 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=3
+[0m17:15:00.036672 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- EnvironmentVariableNamespaceDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m17:15:00.059481 [debug] [MainThread]: Command `dbt run` succeeded at 17:15:00.058521 after 11.64 seconds
+[0m17:15:00.063786 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A0B5F42A50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A0AF6DA270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A0B448DE50>]}
+[0m17:15:00.066415 [debug] [MainThread]: Flushing usage events
+[0m17:15:01.859913 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:15:38.203652 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C71CC323C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C719AFD810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C71F2D3B10>]}
+
+
+============================== 17:15:38.210294 | b417f497-7b1f-4f93-8bf4-e85c26c0ee22 ==============================
+[0m17:15:38.210294 [info ] [MainThread]: Running with dbt=1.12.7
+[0m17:15:38.211103 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt run --project-dir dbt --profiles-dir dbt', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'dbt\\logs'}
+[0m17:15:38.211636 [warn ] [MainThread]: [[33mWARNING[0m][EnvironmentVariableNamespaceDeprecation]: Deprecated
+functionality
+Found custom environment variable `DBT_ENGINE_MANAGE_STATE` in the environment.
+The prefix `DBT_ENGINE` is reserved for dbt engine environment variables. Custom
+environment variables with the prefix `DBT_ENGINE` may cause collisions and
+runtime errors.
+[0m17:15:38.212216 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'b417f497-7b1f-4f93-8bf4-e85c26c0ee22', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C71F2C3A80>]}
+[0m17:15:38.483192 [info ] [MainThread]: State adapter: dbt-state v2.64.0 is disabled
+[0m17:15:38.498672 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b417f497-7b1f-4f93-8bf4-e85c26c0ee22', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C71C5E8490>]}
+[0m17:15:38.596354 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b417f497-7b1f-4f93-8bf4-e85c26c0ee22', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C71F12BE50>]}
+[0m17:15:38.597969 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m17:15:38.944097 [debug] [MainThread]: checksum: 3231035334bfc49aa985ad8056e9ca553f6df8558700f2e162d2889609c5a75a, vars: {}, profile: tfl_analytics, target: dev, version: 1.12.7
+[0m17:15:39.263661 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:15:39.264151 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m17:15:39.264464 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:15:39.278791 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b417f497-7b1f-4f93-8bf4-e85c26c0ee22', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C71F48B6B0>]}
+[0m17:15:39.516638 [debug] [MainThread]: Wrote artifact WritableManifest to dbt\target\manifest.json
+[0m17:15:39.520876 [debug] [MainThread]: Wrote artifact SemanticManifest to dbt\target\semantic_manifest.json
+[0m17:15:39.569485 [debug] [MainThread]: Wrote artifact OsiDocument to dbt\target\osi_document.json
+[0m17:15:39.594188 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b417f497-7b1f-4f93-8bf4-e85c26c0ee22', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C71FA85010>]}
+[0m17:15:39.594809 [info ] [MainThread]: Found 3 models, 6 data tests, 2 sources, 477 macros
+[0m17:15:39.595450 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b417f497-7b1f-4f93-8bf4-e85c26c0ee22', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C71FA0F040>]}
+[0m17:15:39.598112 [info ] [MainThread]: 
+[0m17:15:39.598758 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m17:15:39.599249 [info ] [MainThread]: 
+[0m17:15:39.599954 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m17:15:39.606460 [debug] [ThreadPool]: Acquiring new postgres connection 'list_tfl'
+[0m17:15:39.752481 [debug] [ThreadPool]: Using postgres connection "list_tfl"
+[0m17:15:39.752985 [debug] [ThreadPool]: On list_tfl: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "connection_name": "list_tfl"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m17:15:39.753331 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:15:39.821199 [debug] [ThreadPool]: SQL status: SELECT 5 in 0.068 seconds
+[0m17:15:39.822792 [debug] [ThreadPool]: On list_tfl: Close
+[0m17:15:39.827240 [debug] [ThreadPool]: Acquiring new postgres connection 'list_tfl_analytics'
+[0m17:15:39.835253 [debug] [ThreadPool]: Using postgres connection "list_tfl_analytics"
+[0m17:15:39.835955 [debug] [ThreadPool]: On list_tfl_analytics: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "connection_name": "list_tfl_analytics"} */
+select
+      'tfl' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'analytics'
+    union all
+    select
+      'tfl' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'analytics'
+    union all
+    select
+      'tfl' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'analytics'
+    union all
+    select distinct
+     'tfl' as database,
+     proname as name,
+     ns.nspname as schema,
+     'function' as type
+    from pg_proc
+     join pg_namespace as ns on pronamespace = ns.oid
+    where ns.nspname ilike 'analytics'
+  
+[0m17:15:39.836488 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:15:39.874339 [debug] [ThreadPool]: SQL status: SELECT 3 in 0.038 seconds
+[0m17:15:39.875872 [debug] [ThreadPool]: On list_tfl_analytics: ROLLBACK
+[0m17:15:39.877259 [debug] [ThreadPool]: On list_tfl_analytics: Close
+[0m17:15:39.882740 [debug] [MainThread]: Using postgres connection "master"
+[0m17:15:39.883307 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m17:15:39.883732 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:15:39.914276 [debug] [MainThread]: SQL status: SELECT 4 in 0.030 seconds
+[0m17:15:39.916484 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b417f497-7b1f-4f93-8bf4-e85c26c0ee22', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C71F916210>]}
+[0m17:15:39.917081 [debug] [MainThread]: On master: ROLLBACK
+[0m17:15:39.918226 [debug] [MainThread]: On master: COMMIT
+[0m17:15:39.918635 [debug] [MainThread]: Using postgres connection "master"
+[0m17:15:39.918955 [debug] [MainThread]: On master: COMMIT
+[0m17:15:39.920527 [debug] [MainThread]: SQL status: COMMIT in 0.001 seconds
+[0m17:15:39.920999 [debug] [MainThread]: On master: Close
+[0m17:15:39.927475 [debug] [Thread-1 (]: Began running node model.tfl_analytics.stg_tube_lines
+[0m17:15:39.928061 [debug] [Thread-2 (]: Began running node model.tfl_analytics.stg_tube_status_snapshots
+[0m17:15:39.928772 [info ] [Thread-1 (]: 1 of 3 START sql view model analytics.stg_tube_lines ........................... [RUN]
+[0m17:15:39.930517 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.tfl_analytics.stg_tube_lines'
+[0m17:15:39.929449 [info ] [Thread-2 (]: 2 of 3 START sql view model analytics.stg_tube_status_snapshots ................ [RUN]
+[0m17:15:39.931146 [debug] [Thread-1 (]: Began compiling node model.tfl_analytics.stg_tube_lines
+[0m17:15:39.931838 [debug] [Thread-2 (]: Acquiring new postgres connection 'model.tfl_analytics.stg_tube_status_snapshots'
+[0m17:15:39.938436 [debug] [Thread-1 (]: Writing injected SQL for node "model.tfl_analytics.stg_tube_lines"
+[0m17:15:39.939023 [debug] [Thread-2 (]: Began compiling node model.tfl_analytics.stg_tube_status_snapshots
+[0m17:15:39.941319 [debug] [Thread-2 (]: Writing injected SQL for node "model.tfl_analytics.stg_tube_status_snapshots"
+[0m17:15:39.942593 [debug] [Thread-1 (]: Began executing node model.tfl_analytics.stg_tube_lines
+[0m17:15:39.976608 [debug] [Thread-2 (]: Began executing node model.tfl_analytics.stg_tube_status_snapshots
+[0m17:15:39.984467 [debug] [Thread-1 (]: Writing runtime sql for node "model.tfl_analytics.stg_tube_lines"
+[0m17:15:39.987897 [debug] [Thread-2 (]: Writing runtime sql for node "model.tfl_analytics.stg_tube_status_snapshots"
+[0m17:15:39.989900 [debug] [Thread-1 (]: Using postgres connection "model.tfl_analytics.stg_tube_lines"
+[0m17:15:39.990807 [debug] [Thread-1 (]: On model.tfl_analytics.stg_tube_lines: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "node_id": "model.tfl_analytics.stg_tube_lines"} */
+
+  create view "tfl"."analytics"."stg_tube_lines__dbt_tmp"
+    
+    
+  as (
+    select line_id, line_name, ingested_at from "tfl"."public"."tube_lines"
+  );
+[0m17:15:39.991848 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:15:39.993372 [debug] [Thread-2 (]: Using postgres connection "model.tfl_analytics.stg_tube_status_snapshots"
+[0m17:15:39.994006 [debug] [Thread-2 (]: On model.tfl_analytics.stg_tube_status_snapshots: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "node_id": "model.tfl_analytics.stg_tube_status_snapshots"} */
+
+  create view "tfl"."analytics"."stg_tube_status_snapshots__dbt_tmp"
+    
+    
+  as (
+    select snapshot_id, line_id, observed_at, status_severity, status_description
+from "tfl"."public"."tube_status_snapshots"
+  );
+[0m17:15:39.994483 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m17:15:40.030184 [debug] [Thread-2 (]: SQL status: CREATE VIEW in 0.036 seconds
+[0m17:15:40.037137 [debug] [Thread-2 (]: Using postgres connection "model.tfl_analytics.stg_tube_status_snapshots"
+[0m17:15:40.037809 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.046 seconds
+[0m17:15:40.038319 [debug] [Thread-2 (]: On model.tfl_analytics.stg_tube_status_snapshots: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "node_id": "model.tfl_analytics.stg_tube_status_snapshots"} */
+alter table "tfl"."analytics"."stg_tube_status_snapshots" rename to "stg_tube_status_snapshots__dbt_backup"
+[0m17:15:40.041497 [debug] [Thread-1 (]: Using postgres connection "model.tfl_analytics.stg_tube_lines"
+[0m17:15:40.042148 [debug] [Thread-1 (]: On model.tfl_analytics.stg_tube_lines: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "node_id": "model.tfl_analytics.stg_tube_lines"} */
+alter table "tfl"."analytics"."stg_tube_lines" rename to "stg_tube_lines__dbt_backup"
+[0m17:15:40.044046 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m17:15:40.044602 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.003 seconds
+[0m17:15:40.047279 [debug] [Thread-1 (]: Using postgres connection "model.tfl_analytics.stg_tube_lines"
+[0m17:15:40.049840 [debug] [Thread-2 (]: Using postgres connection "model.tfl_analytics.stg_tube_status_snapshots"
+[0m17:15:40.050399 [debug] [Thread-1 (]: On model.tfl_analytics.stg_tube_lines: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "node_id": "model.tfl_analytics.stg_tube_lines"} */
+alter table "tfl"."analytics"."stg_tube_lines__dbt_tmp" rename to "stg_tube_lines"
+[0m17:15:40.050945 [debug] [Thread-2 (]: On model.tfl_analytics.stg_tube_status_snapshots: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "node_id": "model.tfl_analytics.stg_tube_status_snapshots"} */
+alter table "tfl"."analytics"."stg_tube_status_snapshots__dbt_tmp" rename to "stg_tube_status_snapshots"
+[0m17:15:40.053096 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m17:15:40.053668 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m17:15:40.074898 [debug] [Thread-2 (]: On model.tfl_analytics.stg_tube_status_snapshots: COMMIT
+[0m17:15:40.077218 [debug] [Thread-1 (]: On model.tfl_analytics.stg_tube_lines: COMMIT
+[0m17:15:40.077761 [debug] [Thread-2 (]: Using postgres connection "model.tfl_analytics.stg_tube_status_snapshots"
+[0m17:15:40.078222 [debug] [Thread-1 (]: Using postgres connection "model.tfl_analytics.stg_tube_lines"
+[0m17:15:40.078627 [debug] [Thread-2 (]: On model.tfl_analytics.stg_tube_status_snapshots: COMMIT
+[0m17:15:40.079075 [debug] [Thread-1 (]: On model.tfl_analytics.stg_tube_lines: COMMIT
+[0m17:15:40.083557 [debug] [Thread-2 (]: SQL status: COMMIT in 0.004 seconds
+[0m17:15:40.090862 [debug] [Thread-2 (]: Applying DROP to: "tfl"."analytics"."stg_tube_status_snapshots__dbt_backup"
+[0m17:15:40.096493 [debug] [Thread-2 (]: Using postgres connection "model.tfl_analytics.stg_tube_status_snapshots"
+[0m17:15:40.097032 [debug] [Thread-2 (]: On model.tfl_analytics.stg_tube_status_snapshots: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "node_id": "model.tfl_analytics.stg_tube_status_snapshots"} */
+drop view if exists "tfl"."analytics"."stg_tube_status_snapshots__dbt_backup" cascade
+[0m17:15:40.099485 [debug] [Thread-1 (]: SQL status: COMMIT in 0.020 seconds
+[0m17:15:40.103221 [debug] [Thread-1 (]: Applying DROP to: "tfl"."analytics"."stg_tube_lines__dbt_backup"
+[0m17:15:40.104538 [debug] [Thread-1 (]: Using postgres connection "model.tfl_analytics.stg_tube_lines"
+[0m17:15:40.105211 [debug] [Thread-1 (]: On model.tfl_analytics.stg_tube_lines: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "node_id": "model.tfl_analytics.stg_tube_lines"} */
+drop view if exists "tfl"."analytics"."stg_tube_lines__dbt_backup" cascade
+[0m17:15:40.109332 [debug] [Thread-2 (]: SQL status: DROP VIEW in 0.012 seconds
+[0m17:15:40.114839 [debug] [Thread-2 (]: On model.tfl_analytics.stg_tube_status_snapshots: Close
+[0m17:15:40.121166 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.015 seconds
+[0m17:15:40.123666 [debug] [Thread-1 (]: On model.tfl_analytics.stg_tube_lines: Close
+[0m17:15:40.125784 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b417f497-7b1f-4f93-8bf4-e85c26c0ee22', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C71FC69390>]}
+[0m17:15:40.126649 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b417f497-7b1f-4f93-8bf4-e85c26c0ee22', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C71D102A30>]}
+[0m17:15:40.127940 [info ] [Thread-2 (]: 2 of 3 OK created sql view model analytics.stg_tube_status_snapshots ........... [[32mCREATE VIEW[0m in 0.18s]
+[0m17:15:40.131186 [debug] [Thread-2 (]: Finished running node model.tfl_analytics.stg_tube_status_snapshots
+[0m17:15:40.129260 [info ] [Thread-1 (]: 1 of 3 OK created sql view model analytics.stg_tube_lines ...................... [[32mCREATE VIEW[0m in 0.19s]
+[0m17:15:40.133456 [debug] [Thread-1 (]: Finished running node model.tfl_analytics.stg_tube_lines
+[0m17:15:40.135060 [debug] [Thread-3 (]: Began running node model.tfl_analytics.mart_line_reliability
+[0m17:15:40.136214 [info ] [Thread-3 (]: 3 of 3 START sql view model analytics.mart_line_reliability .................... [RUN]
+[0m17:15:40.138227 [debug] [Thread-3 (]: Acquiring new postgres connection 'model.tfl_analytics.mart_line_reliability'
+[0m17:15:40.139119 [debug] [Thread-3 (]: Began compiling node model.tfl_analytics.mart_line_reliability
+[0m17:15:40.143197 [debug] [Thread-3 (]: Writing injected SQL for node "model.tfl_analytics.mart_line_reliability"
+[0m17:15:40.145408 [debug] [Thread-3 (]: Began executing node model.tfl_analytics.mart_line_reliability
+[0m17:15:40.150098 [debug] [Thread-3 (]: Writing runtime sql for node "model.tfl_analytics.mart_line_reliability"
+[0m17:15:40.152088 [debug] [Thread-3 (]: Using postgres connection "model.tfl_analytics.mart_line_reliability"
+[0m17:15:40.152820 [debug] [Thread-3 (]: On model.tfl_analytics.mart_line_reliability: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "node_id": "model.tfl_analytics.mart_line_reliability"} */
+
+  create view "tfl"."analytics"."mart_line_reliability__dbt_tmp"
+    
+    
+  as (
+    with lines as (
+    select * from "tfl"."analytics"."stg_tube_lines"
+),
+statuses as (
+    select * from "tfl"."analytics"."stg_tube_status_snapshots"
+)
+select lines.line_id,
+lines.line_name,
+count(statuses.snapshot_id) as total_observations,
+
+sum(
+    case when
+    statuses.status_severity = 10 then 1
+    else 0
+    end
+) as good_service_observations,
+
+sum(
+    case when
+    statuses.status_severity <> 10 then 1
+    else 0
+    end
+) as disrupted_observations,
+
+round(
+    100.0
+    * sum(
+        case when
+        statuses.status_severity = 10 then 1
+        else 0
+        end
+    )
+    / nullif(count(statuses.snapshot_id),0),
+    2
+) as reliability_percentage
+
+from lines left join statuses on lines.line_id = statuses.line_id
+group by lines.line_id, lines.line_name
+  );
+[0m17:15:40.153813 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m17:15:40.198009 [debug] [Thread-3 (]: SQL status: CREATE VIEW in 0.044 seconds
+[0m17:15:40.202158 [debug] [Thread-3 (]: Using postgres connection "model.tfl_analytics.mart_line_reliability"
+[0m17:15:40.202832 [debug] [Thread-3 (]: On model.tfl_analytics.mart_line_reliability: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "node_id": "model.tfl_analytics.mart_line_reliability"} */
+alter table "tfl"."analytics"."mart_line_reliability__dbt_tmp" rename to "mart_line_reliability"
+[0m17:15:40.205117 [debug] [Thread-3 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m17:15:40.207303 [debug] [Thread-3 (]: On model.tfl_analytics.mart_line_reliability: COMMIT
+[0m17:15:40.207844 [debug] [Thread-3 (]: Using postgres connection "model.tfl_analytics.mart_line_reliability"
+[0m17:15:40.208314 [debug] [Thread-3 (]: On model.tfl_analytics.mart_line_reliability: COMMIT
+[0m17:15:40.214198 [debug] [Thread-3 (]: SQL status: COMMIT in 0.005 seconds
+[0m17:15:40.216612 [debug] [Thread-3 (]: Applying DROP to: "tfl"."analytics"."mart_line_reliability__dbt_backup"
+[0m17:15:40.217837 [debug] [Thread-3 (]: Using postgres connection "model.tfl_analytics.mart_line_reliability"
+[0m17:15:40.218359 [debug] [Thread-3 (]: On model.tfl_analytics.mart_line_reliability: /* {"app": "dbt", "dbt_version": "1.12.7", "profile_name": "tfl_analytics", "target_name": "dev", "node_id": "model.tfl_analytics.mart_line_reliability"} */
+drop view if exists "tfl"."analytics"."mart_line_reliability__dbt_backup" cascade
+[0m17:15:40.220322 [debug] [Thread-3 (]: SQL status: DROP VIEW in 0.001 seconds
+[0m17:15:40.222367 [debug] [Thread-3 (]: On model.tfl_analytics.mart_line_reliability: Close
+[0m17:15:40.223378 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b417f497-7b1f-4f93-8bf4-e85c26c0ee22', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C71FEC6ED0>]}
+[0m17:15:40.224542 [info ] [Thread-3 (]: 3 of 3 OK created sql view model analytics.mart_line_reliability ............... [[32mCREATE VIEW[0m in 0.09s]
+[0m17:15:40.226181 [debug] [Thread-3 (]: Finished running node model.tfl_analytics.mart_line_reliability
+[0m17:15:40.228650 [debug] [MainThread]: On master: COMMIT
+[0m17:15:40.229312 [debug] [MainThread]: Using postgres connection "master"
+[0m17:15:40.229768 [debug] [MainThread]: On master: COMMIT
+[0m17:15:40.230171 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m17:15:40.253542 [debug] [MainThread]: SQL status: COMMIT in 0.023 seconds
+[0m17:15:40.254336 [debug] [MainThread]: On master: Close
+[0m17:15:40.255151 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:15:40.255830 [debug] [MainThread]: Connection 'list_tfl' was properly closed.
+[0m17:15:40.256488 [debug] [MainThread]: Connection 'list_tfl_analytics' was properly closed.
+[0m17:15:40.257088 [debug] [MainThread]: Connection 'model.tfl_analytics.stg_tube_lines' was properly closed.
+[0m17:15:40.257745 [debug] [MainThread]: Connection 'model.tfl_analytics.stg_tube_status_snapshots' was properly closed.
+[0m17:15:40.258216 [debug] [MainThread]: Connection 'model.tfl_analytics.mart_line_reliability' was properly closed.
+[0m17:15:40.258741 [info ] [MainThread]: 
+[0m17:15:40.259339 [info ] [MainThread]: Finished running 3 view models in 0 hours 0 minutes and 0.66 seconds (0.66s).
+[0m17:15:40.261825 [debug] [MainThread]: Command end result
+[0m17:15:40.319292 [debug] [MainThread]: Wrote artifact WritableManifest to dbt\target\manifest.json
+[0m17:15:40.327380 [debug] [MainThread]: Wrote artifact SemanticManifest to dbt\target\semantic_manifest.json
+[0m17:15:40.335518 [debug] [MainThread]: Wrote artifact OsiDocument to dbt\target\osi_document.json
+[0m17:15:40.363363 [debug] [MainThread]: Wrote artifact RunExecutionResult to dbt\target\run_results.json
+[0m17:15:40.364348 [info ] [MainThread]: 
+[0m17:15:40.365688 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:15:40.367155 [info ] [MainThread]: 
+[0m17:15:40.368542 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=3
+[0m17:15:40.370252 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- EnvironmentVariableNamespaceDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m17:15:40.375875 [debug] [MainThread]: Command `dbt run` succeeded at 17:15:40.375460 after 2.44 seconds
+[0m17:15:40.379172 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C71F322A50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C71871A270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C71C9CF710>]}
+[0m17:15:40.381699 [debug] [MainThread]: Flushing usage events
+[0m17:15:41.304986 [debug] [MainThread]: An error was encountered while trying to flush usage events
