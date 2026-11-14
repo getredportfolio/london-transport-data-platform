@@ -1,0 +1,1 @@
+select line_id, line_name, ingested_at from {{source('tfl', 'tube_lines')}}

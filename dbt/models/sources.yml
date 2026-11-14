@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: tfl
+    database: tfl
+    schema: public
+
+    tables:
+      - name: tube_lines
+      - name: tube_status_snapshots
