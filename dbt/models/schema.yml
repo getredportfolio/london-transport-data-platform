@@ -22,3 +22,10 @@ models:
               arguments:
                 to: ref('stg_tube_lines')
                 field: line_id
+
+  - name: mart_line_reliability
+    columns:
+      - name: line_id
+        data_tests:
+          - unique
+          - not_null
