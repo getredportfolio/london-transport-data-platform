@@ -1,7 +1,6 @@
 import pendulum
-
-from airflow.sdk import dag, task
 from airflow.providers.standard.operators.bash import BashOperator
+from airflow.sdk import dag, task
 
 
 @dag(
