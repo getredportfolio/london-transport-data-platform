@@ -26,7 +26,7 @@ def validate_tube_statuses(data):
             result = TubeStatusSnapshot(
                 line_id=line["id"],
                 status_severity=status["statusSeverity"],
-                status_description=status["statusSeverityDescription"]
+                status_description=status.get("statusSeverityDescription"),
             )
             results.append(result)
 
