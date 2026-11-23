@@ -29,3 +29,10 @@ models:
         data_tests:
           - unique
           - not_null
+
+  - name: mart_line_reliability_windows
+    columns:
+      - name: line_id
+        data_tests:
+          - unique
+          - not_null
